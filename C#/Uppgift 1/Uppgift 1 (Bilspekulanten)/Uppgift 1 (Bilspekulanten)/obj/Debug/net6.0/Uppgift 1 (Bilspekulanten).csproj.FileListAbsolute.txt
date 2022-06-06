@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\bin\Debug\net6.0\Uppgift 1 (Bilspekulanten).exe
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\bin\Debug\net6.0\Uppgift 1 (Bilspekulanten).deps.json
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\bin\Debug\net6.0\Uppgift 1 (Bilspekulanten).runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\bin\Debug\net6.0\Uppgift 1 (Bilspekulanten).dll
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\bin\Debug\net6.0\Uppgift 1 (Bilspekulanten).pdb
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\obj\Debug\net6.0\Uppgift 1 (Bilspekulanten).csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\obj\Debug\net6.0\Uppgift 1 (Bilspekulanten).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\obj\Debug\net6.0\Uppgift 1 (Bilspekulanten).AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\obj\Debug\net6.0\Uppgift 1 (Bilspekulanten).AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\obj\Debug\net6.0\Uppgift 1 (Bilspekulanten).csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\obj\Debug\net6.0\Uppgift 1 (Bilspekulanten).dll
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\obj\Debug\net6.0\refint\Uppgift 1 (Bilspekulanten).dll
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\obj\Debug\net6.0\Uppgift 1 (Bilspekulanten).pdb
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\obj\Debug\net6.0\Uppgift 1 (Bilspekulanten).genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 1\Uppgift 1 (Bilspekulanten)\Uppgift 1 (Bilspekulanten)\obj\Debug\net6.0\ref\Uppgift 1 (Bilspekulanten).dll
