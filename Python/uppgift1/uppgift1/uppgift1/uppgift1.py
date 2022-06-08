@@ -26,7 +26,7 @@ owned_car1 = {""}
 
 
 
-while money > car1 and money > car2 and money > car3:
+while money > car1 and money > car2 and money > car3 and menu < 4:
     menu = int(input("Choose menu 1: to buy, 2 sale, 3 exit: "))
     if menu == 1:
        menu2 = 0
@@ -65,6 +65,7 @@ while money > car1 and money > car2 and money > car3:
     elif menu == 2 :
        menu3 = 0
        menu3 = int(input(" Do you want to sell? Volvo v100 (1), volvo v200, (3) volvo v300, (4) exit: " ))
+       print("Owned cars ",owned_car1)
 
        if menu3 == 1 and sale > 0:
            money += car1
@@ -72,7 +73,7 @@ while money > car1 and money > car2 and money > car3:
            print(car_Name1)
            sale -= 1
            print("Owned cars ", sale)
-           #owned_car1.remove("Volvo v100")
+           owned_car1.remove("Volvo v100")
            
        elif menu3 == 2 and sale > 0: 
            money += car2
@@ -80,7 +81,7 @@ while money > car1 and money > car2 and money > car3:
            print(car_Name2)
            sale -= 1
            print("Owned cars ", sale)
-           #owned_car1.remove("Volvo v200")
+           owned_car1.remove("Volvo v200")
 
        elif menu3 == 3 and sale > 0:
             money += car3
@@ -88,7 +89,7 @@ while money > car1 and money > car2 and money > car3:
             print(car_Name3)
             sale -= 1
             print("Owned cars ", sale)
-           # owned_car1.remove("Volvo v300")
+            owned_car1.remove("Volvo v300")
 
        elif menu3 == 4:
             print("money: ",money)
@@ -101,12 +102,12 @@ while money > car1 and money > car2 and money > car3:
             print("money: ",money)
 
     elif menu == 3:
-        menu = True
+        menu = 4
 
     else :
         print("wrong keyboard input")
-print("You have no more money")
-print("Owned cars ",owned_car1)
+print("You have no more money or you exited dealership")
+print("Owned cars after purchase ",owned_car1)
 
 
 
