@@ -112,6 +112,6 @@ print("Owned cars after purchase ",owned_car1)
 
 
 
-f = open('text.txt', 'r')
-print(f.name)
-f.close()
+#f = open('text.txt', 'r')
+#print(f.name)
+#f.close()

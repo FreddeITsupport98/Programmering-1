@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Collections;
 
 namespace bilspekulanten
 {
@@ -32,7 +33,7 @@ namespace bilspekulanten
             string car_Name2 = "volvo v200, model 2010";
             string car_Name3 = "volvo v300, model 2022";
 
-            string[] ownedcar = {""};
+            string[] ownedcar = new string [3];
 
             while (money > car1 && money > car2 && money > car3 && exit != true)
             {
@@ -45,28 +46,58 @@ namespace bilspekulanten
                     if (menu2 == "1")
                     {
                         money -= car1;
-                        Console.WriteLine(money);
+                        Console.WriteLine("Money: " + money);
                         sale++;
-                        Console.WriteLine(sale);
+                        Console.WriteLine("Owned cars: " + sale);
                     }
                     else if (menu2 == "2")
                     {
-                        Console.WriteLine("2");
+                        money -= car2;
+                        Console.WriteLine("Money: " + money);
+                        sale++;
+                        Console.WriteLine("Owned cars: " + sale);
                     }
                     else if (menu2 == "3")
                     {
-                        Console.WriteLine("3");
+                        money -= car3;
+                        Console.WriteLine("Money: " + money);
+                        sale++;
+                        Console.WriteLine("Owned cars: " + sale);
                     }
                     else
                     {
                         Console.WriteLine("Du skrev fel på keyboard");
                     }
-
-                    
                 }
                 else if (menu == "2")
                 {
-                    Console.WriteLine("menu 2");
+                    Console.Write(" Do you want to sell? Volvo v100 (1), volvo v200, (3) volvo v300: ");
+                    string menu3 = Console.ReadLine();
+                    if (menu3 == "1" && sale > 0)
+                    {
+                        money += car1;
+                        Console.WriteLine("Money: " + money);
+                        sale--;
+                        Console.WriteLine("Owned cars: " + sale);
+                    }
+                    else if (menu3 == "2" && sale > 0)
+                    {
+                        money += car1;
+                        Console.WriteLine("Money: " + money);
+                        sale--;
+                        Console.WriteLine("Owned cars: " + sale);
+                    }
+                    else if (menu3 == "3" && sale > 0)
+                    {
+                        money += car1;
+                        Console.WriteLine("Money: " + money);
+                        sale--;
+                        Console.WriteLine("Owned cars: " + sale);
+                    }
+                    else
+                    {
+                        Console.WriteLine("wrong keyboard input or you don't own a car");
+                    }
                 }
                 else if (menu == "3")
                 {
@@ -78,7 +109,41 @@ namespace bilspekulanten
                     Console.WriteLine("Du skrev fel");
                 }
             }
+            if (sale == 1)
+            {
+                Console.WriteLine("Volvo v100, model 2005");
+            }
+            else if (sale == 2) 
+            {
+                Console.WriteLine("Volvo v100, model 2005");
+                Console.WriteLine("Volvo v200, model 2010");
+            }
+            else if (sale == 3)
+            {
+                Console.WriteLine("Volvo v100, model 2005");
+                Console.WriteLine("Volvo v200, model 2010");
+                Console.WriteLine("Volvo v300, model 2022");
+               
+            }
+            else if (sale == 4)
+            {
+                Console.WriteLine("Volvo v100, model 2005");
+                Console.WriteLine("Volvo v100, model 2005");
+                Console.WriteLine("Volvo v200, model 2010");
+                Console.WriteLine("Volvo v300, model 2022");
+
+            }
+            else if (sale == 5)
+            {
+                Console.WriteLine("Volvo v100, model 2005");
+                Console.WriteLine("Volvo v100, model 2005");
+                Console.WriteLine("Volvo v200, model 2010");
+                Console.WriteLine("Volvo v200, model 2010");
+                Console.WriteLine("Volvo v300, model 2022");
+
+            }
             Console.WriteLine("du har slut på pengar eller avslutade handel");
+            Console.WriteLine(ownedcar);
 
             Console.ReadLine();
         }
