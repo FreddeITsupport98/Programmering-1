@@ -12,14 +12,14 @@ print(" Well you have a " + car_make + " of " + model + " and already from " + y
 
 # buy car code sett
 
-money = 1000 # defined money amount to buy
+money = 1500 # defined money amount to buy
 sale = 0 #Sale means owned car 
 menu = 0 # menu
 car1 = 250 # car value
 car_Name1 = "volvo v100, model 2005" #car name
 car2 = 300
 car_Name2 = "volvo v200, model 2010"
-car3 = 300
+car3 = 400
 car_Name3 = "volvo v300, model 2022"
 
 owned_car1 = {""} #created empty list to concatenete
