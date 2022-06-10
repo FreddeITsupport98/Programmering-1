@@ -23,7 +23,7 @@ namespace bilspekulanten
 
             //Console.WriteLine(" Well you have a " + car_make + " of " + model + " and already from " + year_model + " but it has not gone more than " + drive_distance + " it sounds intresting! ");
 
-            int money = 1500;
+            int money = 1250;
             int sale = 0;
             int car1 = 250;
             int car2 = 300;
@@ -33,7 +33,16 @@ namespace bilspekulanten
             string car_Name2 = "volvo v200, model 2010";
             string car_Name3 = "volvo v300, model 2022";
 
-            string[] ownedcar = new string [3];
+            string[] cars = new string[10];
+
+            cars[0] = "";
+            cars[1] = "";
+            cars[2] = "";
+
+            
+            
+            cars.Append(cars[3] = "volvo v300, model 2022");
+
 
             while (money > car1 && money > car2 && money > car3 && exit != true)
             {
@@ -49,6 +58,7 @@ namespace bilspekulanten
                         Console.WriteLine("Money: " + money);
                         sale++;
                         Console.WriteLine("Owned cars: " + sale);
+                        cars.Append(cars[0] = "volvo v100, model 2005");
                     }
                     else if (menu2 == "2")
                     {
@@ -56,6 +66,7 @@ namespace bilspekulanten
                         Console.WriteLine("Money: " + money);
                         sale++;
                         Console.WriteLine("Owned cars: " + sale);
+                        cars.Append(cars[1] = "volvo v200, model 2010");
                     }
                     else if (menu2 == "3")
                     {
@@ -63,6 +74,7 @@ namespace bilspekulanten
                         Console.WriteLine("Money: " + money);
                         sale++;
                         Console.WriteLine("Owned cars: " + sale);
+                        cars.Append(cars[2] = "volvo v300, model 2022");
                     }
                     else
                     {
@@ -73,12 +85,16 @@ namespace bilspekulanten
                 {
                     Console.Write(" Do you want to sell? Volvo v100 (1), volvo v200, (3) volvo v300: ");
                     string menu3 = Console.ReadLine();
+                    Console.WriteLine(cars[0] + " Owned cars! ");
+                    Console.WriteLine(cars[1] + " Owned cars! ");
+                    Console.WriteLine(cars[2] + " Owned cars! ");
                     if (menu3 == "1" && sale > 0)
                     {
                         money += car1;
                         Console.WriteLine("Money: " + money);
                         sale--;
                         Console.WriteLine("Owned cars: " + sale);
+                        cars.Append(cars[0] = "");
                     }
                     else if (menu3 == "2" && sale > 0)
                     {
@@ -86,6 +102,7 @@ namespace bilspekulanten
                         Console.WriteLine("Money: " + money);
                         sale--;
                         Console.WriteLine("Owned cars: " + sale);
+                        cars.Append(cars[1] = "");
                     }
                     else if (menu3 == "3" && sale > 0)
                     {
@@ -93,6 +110,7 @@ namespace bilspekulanten
                         Console.WriteLine("Money: " + money);
                         sale--;
                         Console.WriteLine("Owned cars: " + sale);
+                        cars.Append(cars[2] = "");
                     }
                     else
                     {
@@ -109,41 +127,10 @@ namespace bilspekulanten
                     Console.WriteLine("Du skrev fel");
                 }
             }
-            if (sale == 1)
-            {
-                Console.WriteLine("Volvo v100, model 2005");
-            }
-            else if (sale == 2) 
-            {
-                Console.WriteLine("Volvo v100, model 2005");
-                Console.WriteLine("Volvo v200, model 2010");
-            }
-            else if (sale == 3)
-            {
-                Console.WriteLine("Volvo v100, model 2005");
-                Console.WriteLine("Volvo v200, model 2010");
-                Console.WriteLine("Volvo v300, model 2022");
-               
-            }
-            else if (sale == 4)
-            {
-                Console.WriteLine("Volvo v100, model 2005");
-                Console.WriteLine("Volvo v100, model 2005");
-                Console.WriteLine("Volvo v200, model 2010");
-                Console.WriteLine("Volvo v300, model 2022");
-
-            }
-            else if (sale == 5)
-            {
-                Console.WriteLine("Volvo v100, model 2005");
-                Console.WriteLine("Volvo v100, model 2005");
-                Console.WriteLine("Volvo v200, model 2010");
-                Console.WriteLine("Volvo v200, model 2010");
-                Console.WriteLine("Volvo v300, model 2022");
-
-            }
             Console.WriteLine("du har slut på pengar eller avslutade handel");
-            Console.WriteLine(ownedcar);
+            Console.WriteLine(cars[0] + " Owned cars! ");
+            Console.WriteLine(cars[1] + " Owned cars! ");
+            Console.WriteLine(cars[2] + " Owned cars! ");
 
             Console.ReadLine();
         }
