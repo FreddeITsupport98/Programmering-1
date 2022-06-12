@@ -91,7 +91,7 @@ namespace bilspekulanten
                         Console.WriteLine("Money: " + money);
                         sale--;
                         Console.WriteLine("Owned cars: " + sale);
-                        cars.Append(cars[0] = ""); // appends index byt string of nothing
+                        cars.Append(cars[0] = ""); // appends index change to string of nothing
                     }
                     else if (menu3 == "2" && sale > 0)
                     {
