@@ -14,10 +14,10 @@ while pinAccess < 3:
     elif pin == userPin: 
        print("Welcome customer!")
        pinAccess = 3
-while menu < 4:
-    print( "Welcome to car-delearchip" )
-    menu = int(input("Menu 1: buy, menu 3: sell menu 3:exit: "))
-    if menu == 1:
+    while menu < 4:
+     print( "Welcome to car-delearchip" )
+     menu = int(input("Menu 1: buy car, Menu 2: sell cars, menu 3:exit: "))
+     if menu == 1:
         menu2 = 0
         print("What do you want to buy?")
         menu2 = int(input("Car1 (1), car2 (2), car3 (3), car4 (4): "))
@@ -30,7 +30,7 @@ while menu < 4:
         elif menu2 == 4:
             print("car4")
 
-    elif menu == 2:
+     elif menu == 2:
         print("What do you want to sell?")
         menu3 = 0
         menu3 = int(input("Car1 (1), car2 (2), car3 (3), car4 (4): "))
@@ -42,6 +42,6 @@ while menu < 4:
             print("car3")
         elif menu3 == 4:
             print("car4")
-    elif menu == 3:
+     elif menu == 3:
         print("Exiting")
         break
