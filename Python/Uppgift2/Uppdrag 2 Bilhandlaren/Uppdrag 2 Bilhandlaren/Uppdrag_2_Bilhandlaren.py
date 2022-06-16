@@ -15,7 +15,7 @@ while pinAccess < 3:
        print("Welcome customer!")
        pinAccess = 3
     while menu < 4:
-     print( "Welcome to car-delearchip" )
+     print(  "Welcome to car-delearchip " + name + " ! ")
      menu = int(input("Menu 1: buy car, Menu 2: sell cars, menu 3:exit: "))
      if menu == 1:
         menu2 = 0
