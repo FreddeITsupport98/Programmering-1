@@ -1,10 +1,10 @@
 print("hello and Welcome!")
-pinAccess = 0
+pinAccess = 0 # set as tries
 menu = 0
 name = input("Whats your name?")
 print("Welcome :" + name)
-while pinAccess < 3:
-    pin = 1234
+while pinAccess < 3: # while loop set to 3 tries then it breaks
+    pin = 1234 # secret pin
     userPin = int(input("Please login with your pin: "))
     if pin != userPin:
        print("Wrong input")
@@ -14,7 +14,7 @@ while pinAccess < 3:
     elif pin == userPin: 
        print("Welcome customer!")
        pinAccess = 3
-    while menu < 4:
+    while menu < 4: # menu 1 buy, menu 2 sell, menu 3 break loop
      print(  "Welcome to car-delearchip " + name + " ! ")
      menu = int(input("Menu 1: buy car, Menu 2: sell cars, menu 3:exit: "))
      if menu == 1:

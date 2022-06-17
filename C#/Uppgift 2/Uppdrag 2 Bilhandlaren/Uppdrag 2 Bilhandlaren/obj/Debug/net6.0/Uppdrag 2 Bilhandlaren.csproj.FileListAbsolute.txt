@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\bin\Debug\net6.0\Uppdrag 2 Bilhandlaren.exe
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\bin\Debug\net6.0\Uppdrag 2 Bilhandlaren.deps.json
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\bin\Debug\net6.0\Uppdrag 2 Bilhandlaren.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\bin\Debug\net6.0\Uppdrag 2 Bilhandlaren.dll
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\bin\Debug\net6.0\Uppdrag 2 Bilhandlaren.pdb
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\obj\Debug\net6.0\Uppdrag 2 Bilhandlaren.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\obj\Debug\net6.0\Uppdrag 2 Bilhandlaren.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\obj\Debug\net6.0\Uppdrag 2 Bilhandlaren.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\obj\Debug\net6.0\Uppdrag 2 Bilhandlaren.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\obj\Debug\net6.0\Uppdrag 2 Bilhandlaren.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\obj\Debug\net6.0\Uppdrag 2 Bilhandlaren.dll
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\obj\Debug\net6.0\refint\Uppdrag 2 Bilhandlaren.dll
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\obj\Debug\net6.0\Uppdrag 2 Bilhandlaren.pdb
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\obj\Debug\net6.0\Uppdrag 2 Bilhandlaren.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\Programmering-1\C#\Uppgift 2\Uppdrag 2 Bilhandlaren\Uppdrag 2 Bilhandlaren\obj\Debug\net6.0\ref\Uppdrag 2 Bilhandlaren.dll
