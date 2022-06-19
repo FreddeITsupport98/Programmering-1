@@ -1,0 +1,2 @@
+ $ 1234, Model: Volvo Manufacture date: 2005
+ $ d, Model: d Manufacture date: d
