@@ -41,6 +41,23 @@ def ticket_read():
     ticket.close()
     
 
+def agreement():
+    print('Welcome to user agreement here you sign the contract for leasing or purchase is made')
+    contract = open('agreement.txt', 'a')
+    name_owner = input('Write your name: ')
+    lease = input('Lease licanse in years: ')
+    car_model = input('Car model: ')
+    warranty = input('Warranty in years: ')
+    signed_by_seller = input('Seller sign contract')
+    
+    contract.write('Dealer ship signing contrakt \n')
+    contract.write('Her by i purchase this car by accepting warranty and lease time \n')
+    contract.write()
+
+agreement()
+
+def agreement_read():
+    print('Read contract to console output')
 
 def ensurance():
     print('This sention is for car ensurance')
@@ -59,7 +76,7 @@ def ensurance():
     print(ensurance.read(), 'checkout')
 
 
-
+'''
 
 menu = 0
 car = 0
@@ -112,3 +129,5 @@ while True:
         print('4')
     elif menu == 5:
         break
+        
+'''
