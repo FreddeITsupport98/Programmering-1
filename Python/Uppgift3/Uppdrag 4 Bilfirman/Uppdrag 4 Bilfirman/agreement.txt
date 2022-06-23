@@ -26,3 +26,31 @@ Cost
 Signed by seller
 Bilar AB
 ***********
+
+***********
+Dealer ship signing contrak 
+Her by i purchase this car by accepting warranty and lease time 
+Here by i accept warranty-policy and leasing license 
+
+Name and surname
+Fredrik Bäckström
+***********
+
+lease
+3 years
+***********
+
+Carmodel
+Volvo v70
+***********
+
+Warranty
+3 years
+***********
+Cost
+1000
+***********
+
+Signed by seller
+Bilar AB
+***********
