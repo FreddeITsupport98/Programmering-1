@@ -9,6 +9,8 @@ def staff(): # staff sign
     staff.write(employee + ',' + ' Welcome staff ID: ' + staffId + ',' + time + '\n') # writes file following values
     print(' Welcome ' + employee + ' Your staff ID: ' + staffId + ',' + time + ' data is stored in server ') #printing
     staff.close() # closses file
+
+
     
 def staff_read(): #Staff.txt read file
     print('start to read employee checkin')
@@ -273,7 +275,7 @@ def managment(): #this is for admin to manage staff login rutins
 
 
 
-
+'''
 menu = 0
 car = 0
 money = 100000
@@ -391,3 +393,4 @@ while True: #Big while menu
             print('Call us if you need to use administator console')
     elif menu == 5:
         break
+'''
