@@ -185,6 +185,7 @@ def managment(): #this is for admin to manage staff login rutins
                 print('Loading previus violations')
                 violation = open('violation.txt', 'r')
                 print(violation.read())
+                violation.close()
             elif menu4 == 'append':
                 violation = open('violation.txt', 'a')
                 name_violation = input('Enter person name and surname: ')
