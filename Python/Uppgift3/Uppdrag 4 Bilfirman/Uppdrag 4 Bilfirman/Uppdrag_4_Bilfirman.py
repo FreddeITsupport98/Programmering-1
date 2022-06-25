@@ -276,9 +276,8 @@ def managment(): #this is for admin to manage staff login rutins
 
 
 
-'''
-menu = 0
-car = 0
+
+
 money = 100000
 cars = {'volvo 2005', 'volvo 2010', 'volvo 2015' }
 
@@ -394,4 +393,3 @@ while True: #Big while menu
             print('Call us if you need to use administator console')
     elif menu == 5:
         break
-'''
