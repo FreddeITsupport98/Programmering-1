@@ -1,5 +1,0 @@
-
- $ 100000, Model: volvo Manufacture date: 2005 , Erikson Berggrund
- $ 100, Model: volvo Manufacture date: 2010 , Erik stenmark
- $ 10000, Model: Volvo v70 Manufacture date: 2010 , Fredrik Bäckström
- $ 10000, Model: volvo v70 Manufacture date: 2010 , fb
