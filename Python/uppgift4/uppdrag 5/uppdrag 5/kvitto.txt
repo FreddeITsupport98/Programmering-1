@@ -1,0 +1,3 @@
+Money left: 0.0,kr:15 Kr,cocola
+{'', 'marobo'}Money left: 0.0,kr:15 kr,lol
+{'', 'marobo', 'nudlar', 'cocola'}
