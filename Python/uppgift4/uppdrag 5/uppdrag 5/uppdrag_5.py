@@ -1,4 +1,3 @@
-import replit
 def vending():
     print('vending machine buy mode "one at time"...')
 
@@ -490,35 +489,77 @@ def vending_search():
     while True:
         x = int(input('Enter Number: '))
         def first():
-            print('Test 1')
+            print('E1')
+            print('Marabo')
+            print('15.5 kr')
+            print('500 kcal')
         def second():
-            print('Test 2')
+            print('E2')
+            print('cocola')
+            print('20 kr')
+            print('1000 kcal')
         def third():
-            print('Test 3')
+            print('E3')
+            print('30 kr')
+            print('800 kcal')
         def fourth():
-            print('Test 4')
+            print('E4')
+            print('Kinderkex')
+            print('12.12 kr')
+            print('650 kcal')
         def fith():
-            print('Test 5')
+            print('E5')
+            print('cocola-light')
+            print('15 kr')
+            print('1 kcal')
         def six():
-            print('test 6')
+            print('E6')
+            print('Loka')
+            print('25 kr')
+            print('1 kcal')
         def seven():
-            print('test 7')
+            print('E7')
+            print('Grill-chips')
+            print('17 kr')
+            print('560 kcal')
         def eight():
-            print('test 8')
+            print('E8')
+            print('viniger-chips')
+            print('25 kr')
+            print('600 kcal')
         def nine():
-            print('test 9')
+            print('E9')
+            print('Cocola-chips')
+            print('800 kcal')
         def ten():
-            print('Test 10')
+            print('E10')
+            print('Rizz')
+            print('10 lr')
+            print('200 kcal')
         def eleven():
-            print('Test 11')
+            print('E11')
+            print('fronzies')
+            print('12 kr')
         def tvelve():
-            print('Test 12')
+            print('E12')
+            print('Nutella-cokies')
+            print('45 kr')
+            print('600 kcal')
         def thirteen():
-            print('Test 13')
+            print('E13')
+            print('twix')
+            print('17 kr')
+            print('200 kcal')
         def forteen():
-            print('Test 14')
+            print('E14')
+            print('water')
+            print('10 kr')
+            print('0 kcal')
         def fifteen():
-            print('Test 15')
+            print('E15')
+            print('snacks')
+            print('14 kr')
+            print('450 kcal')
         dict = {
             1:first, 
             2:second,
@@ -537,15 +578,17 @@ def vending_search():
             15:fifteen
             }
         try: 
-            dict.get(x) ()
+            dict.get(x)
         except:
             print('An error happened, meaby invalid number...')
         menu = input('Write exit to exit vending machine search mode or press enter to continue.')
         if menu == 'exit':
             break
 
+def kalkylator():
+    print('Kalkylator mode enter number to see how much kcal intake is.')
 
-vending_search()
+kalkylator()
 
 
 while True:
