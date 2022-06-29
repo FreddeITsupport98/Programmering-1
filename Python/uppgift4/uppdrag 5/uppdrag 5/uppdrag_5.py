@@ -136,18 +136,7 @@ def vending():
     else:
         print('Not enough founds or program not accept input')
 
-    while True:
-        if money < 100:
-            print('Here is rest of your money')
-            money -= money
-            print(money)
-            break
-        elif money >= 100:
-            print('Money still there want get it back? yes:')
-            input('Input: ')
-            if menu == 'yes':
-                money -= money
-                break
+    
      
     while True:
         menu = input('load file: Load, append, exit: ')
@@ -164,6 +153,18 @@ def vending():
             purchase = input('What did you buy?: ')
             cost = input('How much did it cost?: ')
             file.write( 'Money left: ' + str(money) + ',' + 'kr:' + cost + ',' + purchase + '\n')
+            while True:
+                if money < 100:
+                    print('Here is rest of your money')
+                    money -= money
+                    print(money)
+                    break
+                elif money >= 100:
+                    print('Money still there want get it back? yes:')
+                    input('Input: ')
+                    if menu == 'yes':
+                        money -= money
+                        break
             file.close()
         elif menu == 'exit':
             break
@@ -184,7 +185,8 @@ def vending_batch():
     slot3 = ['grill-chips', 'viniger-chips', 'cocola-chips', '']
     slot4 = ['Rizz', 'fonzies', 'nutella-cokies', '']
     slot5 = ['twix', 'water','snacks', '']
-    slot6 = {''}
+    slot6 = {'Items:'}
+    slot7 = {'Amount paid:'}
     
     print(slot1)
     print(' E1 15.5 kr,   E2 20 kr, E3 30 kr')
@@ -210,6 +212,7 @@ def vending_batch():
                 print('You already have it"')
             try:
                 slot6.add('marobo')
+                slot7.add('15.5')
             except: 
                 print('It did not succed to add to list"')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -225,6 +228,7 @@ def vending_batch():
                 print('You already have it!')
             try: 
                 slot6.add('cocola')
+                slot7.add('20')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -240,6 +244,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('nudlar')
+                slot7.add('30')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -255,6 +260,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('kinderkex')
+                slot7.add('12.12')
             except:
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -270,6 +276,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('cocola-light')
+                slot7.add('15')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -285,6 +292,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('loka')
+                slot7.add('25')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -300,6 +308,7 @@ def vending_batch():
                 print('You already have it')
             try:
                 slot6.add('grill-chips')
+                slot7.add('14')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -315,6 +324,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('viniger-chips')
+                slot7.add('25')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -330,6 +340,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('cocola-chips')
+                slot7.add('15')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -345,6 +356,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('Rizz')
+                slot7.add('10')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -360,6 +372,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('fonzies')
+                slot7.add('12')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -375,6 +388,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('nutella-cokies')
+                slot7.add('45')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -390,6 +404,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('twix')
+                slot7.add('10')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -405,6 +420,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('water')
+                slot7.add('17')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -420,6 +436,7 @@ def vending_batch():
                 print('You already have it!')
             try:
                 slot6.add('snacks')
+                slot7.add('14')
             except: 
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
@@ -431,18 +448,7 @@ def vending_batch():
             print('Not enough founds or program not accept input')
             break
 
-    while True:
-        if money < 100:
-            print('Here is rest of your money')
-            money -= money
-            print(money)
-            break
-        elif money >= 100:
-            print('Money still there want get it back? yes:')
-            input('Input: ')
-            if menu == 'yes':
-                money -= money
-                break
+    
      
     while True:
         menu = input('load file: Load, append, exit: ')
@@ -455,16 +461,78 @@ def vending_batch():
                 (FileNotFoundError)
                 print('File not found')
         elif menu == 'append':
+
             file = open('kvitto.txt', 'a')
             file.write( 'Money left: ' + str(money) + ',' + '\n')
-            file.write(str(slot6))
+            while True:
+                if money < 100:
+                    print('Here is rest of your money')
+                    money -= money
+                    print(money)
+                    break
+                elif money >= 100:
+                    print('Money still there want get it back? yes:')
+                    input('Input: ')
+                    if menu == 'yes':
+                        money -= money
+                        break
+            file.write(str(slot6) + '\n')
+            file.write(str(slot7) + '\n')
+            print('File written!')
             file.close()
         elif menu == 'exit':
             break
 
-vending_batch()
-   
-money = 1000   
+
+def vending_search():
+    print('Wending search mode')
+    while True:
+        x = int(input('Enter Number: '))
+        def first():
+            print('Test 1')
+        def second():
+            print('Test 2')
+        def third():
+            print('Test 3')
+        def fourth():
+            print('Test 4')
+        def fith():
+            print('Test 5')
+        def six():
+            print('test 6')
+        def seven():
+            print('test 7')
+        def eight():
+            print('test 8')
+        def nine():
+            print('test 9')
+        def ten():
+            print('Test 10')
+        def eleven():
+            print('Test 11')
+        def tvelve():
+            print('Test 12')
+        def thirteen():
+            print('Test 13')
+        def forteen():
+            print('Test 14')
+        def fifteen():
+            print('Test 15')
+        dict = {
+            1:first, 
+            2:second,
+            3:third,
+            4:fourth,
+            5:fith
+            }
+        try: 
+            dict.get(x) ()
+        except:
+            print('An error happened, meaby invalid number...')
+
+
+vending_search()
+
 
 while True:
     menu = input('Buy vending machine: \n 1 Single mode,\n 2 batch mode, \n search mode 3, \n 4 exit, \n Input: ')
