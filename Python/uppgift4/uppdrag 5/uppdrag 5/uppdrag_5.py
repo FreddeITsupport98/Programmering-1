@@ -1,4 +1,4 @@
-
+import replit
 def vending():
     print('vending machine buy mode "one at time"...')
 
@@ -486,6 +486,7 @@ def vending_batch():
 
 def vending_search():
     print('Wending search mode')
+    print('\n E1, E2, E3,\n E4, E5, E6\n E7, E8, E9 \n E10, E11 E12 \n E13, E14, E15 \n')
     while True:
         x = int(input('Enter Number: '))
         def first():
@@ -523,12 +524,25 @@ def vending_search():
             2:second,
             3:third,
             4:fourth,
-            5:fith
+            5:fith,
+            6:six,
+            7:seven,
+            8:eight,
+            9:nine,
+            10:ten,
+            11:eleven,
+            12:tvelve,
+            13:thirteen,
+            14:forteen,
+            15:fifteen
             }
         try: 
             dict.get(x) ()
         except:
             print('An error happened, meaby invalid number...')
+        menu = input('Write exit to exit vending machine search mode or press enter to continue.')
+        if menu == 'exit':
+            break
 
 
 vending_search()
