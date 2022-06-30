@@ -1,3 +1,4 @@
+
 def vending():
     print('vending machine buy mode "one at time"...')
 
@@ -493,73 +494,89 @@ def vending_search():
             print('Marabo')
             print('15.5 kr')
             print('500 kcal')
+            print('200 g')
         def second():
             print('E2')
             print('cocola')
             print('20 kr')
             print('1000 kcal')
+            print('450 g')
         def third():
             print('E3')
+            print('Nudlar')
             print('30 kr')
             print('800 kcal')
+            print('200 g')
         def fourth():
             print('E4')
             print('Kinderkex')
             print('12.12 kr')
             print('650 kcal')
+            print('50 g')
         def fith():
             print('E5')
             print('cocola-light')
             print('15 kr')
             print('1 kcal')
+            print('450 g')
         def six():
             print('E6')
             print('Loka')
             print('25 kr')
             print('1 kcal')
+            print('450 g')
         def seven():
             print('E7')
             print('Grill-chips')
             print('17 kr')
             print('560 kcal')
+            print('400 g')
         def eight():
             print('E8')
             print('viniger-chips')
             print('25 kr')
             print('600 kcal')
+            print('350 g')
         def nine():
             print('E9')
             print('Cocola-chips')
             print('800 kcal')
+            print('200 g')
         def ten():
             print('E10')
             print('Rizz')
             print('10 lr')
             print('200 kcal')
+            print('50 g')
         def eleven():
             print('E11')
             print('fronzies')
             print('12 kr')
+            print('50 g')
         def tvelve():
             print('E12')
             print('Nutella-cokies')
             print('45 kr')
             print('600 kcal')
+            print('150 g')
         def thirteen():
             print('E13')
             print('twix')
             print('17 kr')
             print('200 kcal')
+            print('100 g')
         def forteen():
             print('E14')
             print('water')
             print('10 kr')
             print('0 kcal')
+            print('450 g')
         def fifteen():
             print('E15')
             print('snacks')
             print('14 kr')
             print('450 kcal')
+            print('75 g')
         dict = {
             1:first, 
             2:second,
@@ -575,20 +592,168 @@ def vending_search():
             12:tvelve,
             13:thirteen,
             14:forteen,
-            15:fifteen
+            15:fifteen,
             }
         try: 
-            dict.get(x)
+            dict.get(x) () # this closing braket is needed
         except:
             print('An error happened, meaby invalid number...')
-        menu = input('Write exit to exit vending machine search mode or press enter to continue.')
+        menu = input('Write "exit" to exit vending machine search mode or press enter to continue.')
         if menu == 'exit':
             break
 
-def kalkylator():
-    print('Kalkylator mode enter number to see how much kcal intake is.')
 
-kalkylator()
+def kalkylator():
+
+    while True:
+        enter = input('Want use wending search mode?: yes or no: ')
+        if enter == 'yes':
+            vending_search()
+        elif enter == 'no':
+            print('Good luck')
+
+        menu = int(input('How many do you want to buy?: 1,2,3,4,5: '))
+        if menu == 1:
+            print('test1')
+            item1 = input('Enter a item name: ')
+            kcal1 = int(input('Enter mount of kcal: '))
+            kcal1_rec = 250
+            if kcal1 > kcal1_rec:
+                print(item1)
+                print('Recomended intake', kcal1_rec,'kcal', 'yours is: ', kcal1 + '\n')
+                file = open('Kalkylator.txt', 'a')
+                file.write(item1 +',' + str(kcal1_rec) + ',' + str(kcal1))
+                file.close()
+                print('file written...')
+            elif kcal1 < kcal1_rec:
+                print(item1)
+                print('You are in rekomended intake', kcal1_rec,'kcal','yours is:', kcal1 + '\n')
+                file = open('Kalkylator.txt', 'a')
+                file.write(item1 +',' + str(kcal1_rec) +',' + str(kcal1))
+                file.close()
+                print('file written...')
+            
+        elif menu == 2:
+            print('test2')
+            item2 = input('Enter item name 1: ')
+            item3 = input('Enter item name 2: ')
+            kcal2 = int(input('Enter item 1 kcal amount: '))
+            kcal3 = int(input('Enter item 2 kcal amount: '))
+            totalkcal1 = kcal2 + kcal3
+            kcal1_rec2 = 600
+            if totalkcal1 > kcal1_rec2:
+                print(item2)
+                print(item3)
+                print('Recomended intake', kcal1_rec2,'kcal', 'yours is: ', totalkcal1)
+                file = open('Kalkylator.txt', 'a')
+                file.write(item2 + ',' + item3 +',' + str(kcal1_rec2) + ',' + str(totalkcal1) + '\n')
+                file.close()
+                print('file written...')
+            elif totalkcal1 < kcal1_rec2:
+                print(item2)
+                print(item3)
+                print('You are in rekomended intake', kcal1_rec2,'kcal','yours is:', totalkcal1)
+                file = open('Kalkylator.txt', 'a')
+                file.write(item2 + ',' + item3 +',' + str(kcal1_rec2) +',' + str(totalkcal1) + '\n')
+                file.close()
+                print('file written...')
+
+        elif menu == 3:
+            print('test3')
+            item4 = input('Enter item name 1: ')
+            item5 = input('Enter item name 2: ')
+            item6 = input('Enter item name 3: ')
+            kcal4 = int(input('Enter item 1 kcal amount: '))
+            kcal5 = int(input('Enter item 2 kcal amount: '))
+            kcal6 = int(input('Enter item 3 kcal amount: '))
+            totalkcal2 = kcal4 + kcal5 + kcal6
+            kcal1_rec3 = 800
+            if totalkcal2 > kcal1_rec3:
+                print(item4)
+                print(item5)
+                print(item6)
+                print('Recomended intake', kcal1_rec3,'kcal', 'yours is: ', totalkcal2)
+                file = open('Kalkylator.txt', 'a')
+                file.write(item4 + ',' + item5 +',' + item6 + ',' + str(kcal1_rec3) + ',' + str(totalkcal2) + '\n')
+                file.close()
+                print('file written...')
+            elif totalkcal2 < kcal1_rec3:
+                print(item4)
+                print(item5)
+                print(item6)
+                print('You are in rekomended intake', kcal1_rec3,'kcal','yours is:', totalkcal2)
+                file = open('Kalkylator.txt', 'a')
+                file.write(item4 + ',' + item5 +',' + item6 + ',' + str(kcal1_rec3) +',' + str(totalkcal2) + '\n')
+                file.close()
+                print('file written...')
+        elif menu == 4:
+            print('test4')
+            item7 = input('Enter item name 1: ')
+            item8 = input('Enter item name 2: ')
+            item9 = input('Enter item name 3: ')
+            item10 = input('Enter item name 4: ')
+            kcal7 = int(input('Enter item 1 kcal amount: '))
+            kcal8 = int(input('Enter item 2 kcal amount: '))
+            kcal9 = int(input('Enter item 3 kcal amount: '))
+            kcal10 = int(input('Enter item 4 kcal amount: '))
+            totalkcal3 = kcal7 + kcal8 + kcal9 + kcal10
+            kcal1_rec4 = 1100
+            if totalkcal3 > kcal1_rec4:
+                print(item7)
+                print(item8)
+                print(item9)
+                print(item10)
+                print('Recomended intake', kcal1_rec4,'kcal', 'yours is: ', totalkcal3)
+                file = open('Kalkylator.txt', 'a')
+                file.write(item7 + ',' + item8 +',' + item9 + ',' + item10 + ',' + str(kcal1_rec4) + ',' + str(totalkcal3) + '\n')
+                file.close()
+                print('file written...')
+            elif totalkcal3 < kcal1_rec4:
+                print(item7)
+                print(item8)
+                print(item9)
+                print(item10)
+                print('You are in rekomended intake', kcal1_rec4,'kcal','yours is:', totalkcal3)
+                file = open('Kalkylator.txt', 'a')
+                file.write(item7 + ',' + item8 +',' + item9 + ',' + item10 + ',' + str(kcal1_rec4) +',' + str(totalkcal3) + '\n')
+                file.close()
+                print('file written...')
+        elif menu == 5:
+            print('test5')
+            item11 = input('Enter item name 1: ')
+            item12 = input('Enter item name 2: ')
+            item13 = input('Enter item name 3: ')
+            item14 = input('Enter item name 4: ')
+            item15 = input('Enter item name 5: ')
+            kcal11 = int(input('Enter item 1 kcal amount: '))
+            kcal12 = int(input('Enter item 2 kcal amount: '))
+            kcal13 = int(input('Enter item 3 kcal amount: '))
+            kcal14 = int(input('Enter item 4 kcal amount: '))
+            kcal15 = int(input('Enter item 4 kcal amount: '))
+            totalkcal4 = kcal11 + kcal12 + kcal13 + kcal14 + kcal15
+            kcal1_rec5 = 1500
+            if totalkcal4 > kcal1_rec5:
+                print(item11)
+                print(item12)
+                print(item13)
+                print(item14)
+                print(item15)
+                print('Recomended intake', kcal1_rec5,'kcal', 'yours is: ', totalkcal4)
+                file = open('Kalkylator.txt', 'a')
+                file.write(item11 + ',' + item12 +',' + item13 + ',' + item14 + ',' + item15 + ',' + str(kcal1_rec5) + ',' + str(totalkcal4) + '\n')
+                file.close()
+                print('file written...')
+            elif totalkcal4 < kcal1_rec5:
+                print(item11)
+                print(item12)
+                print(item13)
+                print(item14)
+                print(item15)
+                print('You are in rekomended intake', kcal1_rec5,'kcal','yours is:', totalkcal4)
+                file = open('Kalkylator.txt', 'a')
+                file.write(item11 + ',' + item12 +',' + item13 + ',' + item14 + ',' + item15 + ',' + str(kcal1_rec5) + ',' + str(totalkcal4) + '\n')
+                file.close()
+                print('file written...')
 
 
 while True:
