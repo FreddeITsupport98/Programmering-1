@@ -1,4 +1,3 @@
-
 def vending():
     print('vending machine buy mode "one at time"...')
 
@@ -448,7 +447,6 @@ def vending_batch():
             print('Not enough founds or program not accept input')
             break
 
-    
      
     while True:
         menu = input('load file: Load, append, exit: ')
@@ -612,7 +610,7 @@ def kalkylator():
         elif enter == 'no':
             print('Good luck')
 
-        menu = int(input('How many do you want to buy?: 1,2,3,4,5: '))
+        menu = int(input('How many do you want to buy (Rekomended use vending search mode) ?: 1,2,3,4,5, 6: exit program: '))
         if menu == 1:
             print('test1')
             item1 = input('Enter a item name: ')
@@ -622,14 +620,14 @@ def kalkylator():
                 print(item1)
                 print('Recomended intake', kcal1_rec,'kcal', 'yours is: ', kcal1 + '\n')
                 file = open('Kalkylator.txt', 'a')
-                file.write(item1 +',' + str(kcal1_rec) + ',' + str(kcal1))
+                file.write('items:' + item1 +','+ + '\n' 'Rekommended kcal intake: '  + str(kcal1_rec) + ','  + '\n'+ 'Your kcal intake: '+ str(kcal1))
                 file.close()
                 print('file written...')
             elif kcal1 < kcal1_rec:
                 print(item1)
                 print('You are in rekomended intake', kcal1_rec,'kcal','yours is:', kcal1 + '\n')
                 file = open('Kalkylator.txt', 'a')
-                file.write(item1 +',' + str(kcal1_rec) +',' + str(kcal1))
+                file.write( 'items:' + item1 +',' + '\n' + 'Rekommended kcal intake: ' + str(kcal1_rec) +','  + '\n' + 'Your kcal intake: ' + str(kcal1))
                 file.close()
                 print('file written...')
             
@@ -646,7 +644,7 @@ def kalkylator():
                 print(item3)
                 print('Recomended intake', kcal1_rec2,'kcal', 'yours is: ', totalkcal1)
                 file = open('Kalkylator.txt', 'a')
-                file.write(item2 + ',' + item3 +',' + str(kcal1_rec2) + ',' + str(totalkcal1) + '\n')
+                file.write('Items: ' + item2 + ',' + item3 +',' + '\n' + 'Rekommended kcal intake: ' + str(kcal1_rec2) + ',' + '\n'+ 'Your total kcal intake: ' + str(totalkcal1) + '\n')
                 file.close()
                 print('file written...')
             elif totalkcal1 < kcal1_rec2:
@@ -654,7 +652,7 @@ def kalkylator():
                 print(item3)
                 print('You are in rekomended intake', kcal1_rec2,'kcal','yours is:', totalkcal1)
                 file = open('Kalkylator.txt', 'a')
-                file.write(item2 + ',' + item3 +',' + str(kcal1_rec2) +',' + str(totalkcal1) + '\n')
+                file.write('Items: ' + item2 + ',' + item3 +','  + '\n'+  'Rekommended kcal intake: ' + str(kcal1_rec2) +',' + '\n'+ 'Your total kcal intake: ' + str(totalkcal1) + '\n')
                 file.close()
                 print('file written...')
 
@@ -674,7 +672,7 @@ def kalkylator():
                 print(item6)
                 print('Recomended intake', kcal1_rec3,'kcal', 'yours is: ', totalkcal2)
                 file = open('Kalkylator.txt', 'a')
-                file.write(item4 + ',' + item5 +',' + item6 + ',' + str(kcal1_rec3) + ',' + str(totalkcal2) + '\n')
+                file.write('Items: ' +item4 + ',' + item5 +',' + item6 + ',' + '\n'+ 'Rekommended kcal intake: ' + str(kcal1_rec3) + ',' + '\n'+ 'Your total kcal intake: ' + str(totalkcal2) + '\n')
                 file.close()
                 print('file written...')
             elif totalkcal2 < kcal1_rec3:
@@ -683,7 +681,7 @@ def kalkylator():
                 print(item6)
                 print('You are in rekomended intake', kcal1_rec3,'kcal','yours is:', totalkcal2)
                 file = open('Kalkylator.txt', 'a')
-                file.write(item4 + ',' + item5 +',' + item6 + ',' + str(kcal1_rec3) +',' + str(totalkcal2) + '\n')
+                file.write( 'Items: ' + item4 + ',' + item5 +',' + item6 + ',' + '\n'+ 'Rekommended kcal intake: ' + str(kcal1_rec3) + ','+ '\n' + 'Your total kcal intake: ' + str(totalkcal2) + '\n')
                 file.close()
                 print('file written...')
         elif menu == 4:
@@ -705,7 +703,7 @@ def kalkylator():
                 print(item10)
                 print('Recomended intake', kcal1_rec4,'kcal', 'yours is: ', totalkcal3)
                 file = open('Kalkylator.txt', 'a')
-                file.write(item7 + ',' + item8 +',' + item9 + ',' + item10 + ',' + str(kcal1_rec4) + ',' + str(totalkcal3) + '\n')
+                file.write('Items: ' + item7 + ',' + item8 +',' + item9 + ',' + item10 + ',' + '\n'+ 'Rekommended kcal intake: ' + str(kcal1_rec4) + ',' + '\n'+ 'Your total kcal intake: '+ str(totalkcal3) + '\n')
                 file.close()
                 print('file written...')
             elif totalkcal3 < kcal1_rec4:
@@ -715,7 +713,7 @@ def kalkylator():
                 print(item10)
                 print('You are in rekomended intake', kcal1_rec4,'kcal','yours is:', totalkcal3)
                 file = open('Kalkylator.txt', 'a')
-                file.write(item7 + ',' + item8 +',' + item9 + ',' + item10 + ',' + str(kcal1_rec4) +',' + str(totalkcal3) + '\n')
+                file.write( 'Items:' + item7 + ',' + item8 +',' + item9 + ',' + item10 + ',' + '\n'+ 'Rekommended kcal intake: ' + str(kcal1_rec4) +',' + '\n'+ 'Your total kcal intake: ' + str(totalkcal3) + '\n')
                 file.close()
                 print('file written...')
         elif menu == 5:
@@ -740,7 +738,7 @@ def kalkylator():
                 print(item15)
                 print('Recomended intake', kcal1_rec5,'kcal', 'yours is: ', totalkcal4)
                 file = open('Kalkylator.txt', 'a')
-                file.write(item11 + ',' + item12 +',' + item13 + ',' + item14 + ',' + item15 + ',' + str(kcal1_rec5) + ',' + str(totalkcal4) + '\n')
+                file.write( 'items: ' + item11 + ',' + item12 +',' + item13 + ',' + item14 + ',' + item15 + ',' + '\n' +'Rekommended kcal intake: ' + str(kcal1_rec5) + ',' + '\n'+ 'Your total kcal intake: ' + str(totalkcal4) + '\n')
                 file.close()
                 print('file written...')
             elif totalkcal4 < kcal1_rec5:
@@ -751,10 +749,70 @@ def kalkylator():
                 print(item15)
                 print('You are in rekomended intake', kcal1_rec5,'kcal','yours is:', totalkcal4)
                 file = open('Kalkylator.txt', 'a')
-                file.write(item11 + ',' + item12 +',' + item13 + ',' + item14 + ',' + item15 + ',' + str(kcal1_rec5) + ',' + str(totalkcal4) + '\n')
+                file.write( 'Items: ' + item11 + ',' + item12 +',' + item13 + ',' + item14 + ',' + item15 + ',' + '\n' + 'Rekommended kcal intake: ' + str(kcal1_rec5) + ',' + '\n'+ 'Your total kcal intake: ' + str(totalkcal4) + '\n')
                 file.close()
                 print('file written...')
+        elif menu == 6:
+            print('Exiting kalkylator...')
+            break
+
+def rate():
+    print(' Welcome to rate us our service')
+    while True:
+        menu = input('load file: Load previus rate, append rating, exit: ')
+        if menu == 'load':
+            try: 
+                file = open('rate.txt', 'r+')
+                print(file.read())
+                file.close()
+            except:
+                (FileNotFoundError)
+                print('File not found')
+        elif menu == 'append':
+            file = open('rate.txt', 'a')
+            rate = input('How manu stars do you want rate us *-> ***** as maximum stars you can give us. \n Rate: ')
+            name = input('Name and surname :')
+            service = input('Rate our service: ')
+            comment = input('Comments: ')
+            file.write('**************' + '\n')
+            file.write('Rate in stars:' + rate + '\n' + 'Name and surname: ' + name + '\n' + 'Service: ' + service + '\n' + 'Comment: ' + comment + '\n' )
+            file.write('**************' + '\n')
+            file.close()
+        elif menu == 'exit':
+            break
 
 
 while True:
-    menu = input('Buy vending machine: \n 1 Single mode,\n 2 batch mode, \n search mode 3, \n 4 exit, \n Input: ')
+    print(' Welcome to vending alley there you can buy at vending machine for diffrent prices.')
+    print(' Here can you test out our kalkylator to measure the intake of kcal \n program is built to guide users whieght loss \n ')
+    print('*********************************')
+    print(' * You can buy one at the time!')
+    print(' * You can buy at batch if needed!')
+    print(' * Measure amount kcal we fix it!')
+    print(' *       *  *  *  *  *           *')
+    print(' *      FIVE STAR RATING         *')
+    print('*********************************')
+    print(' \n')
+    menu = input('Buy at vending machine: \n 1 Single mode,\n 2 batch mode, \n search mode 3, \n 4 rate us, \n 5 exit, \n Input: ')
+    if menu == '1':
+        print('')
+    elif menu == '2':
+        print('')
+    elif menu == '3':
+        print('')
+    elif menu == '4':
+        print('What do you want to rate our service?')
+        a = input('Are you satified') 
+        if a == 'yes':
+            print('please rate us')
+            rate()
+        elif a == 'no':
+            print('Please put your thoughts to rate us!')
+            rate()
+    elif menu == '5':
+        print('Exiting vending valley.. thank you and come back for some more!')
+        break
+
+
+    
+    
