@@ -1,3 +1,0 @@
-Money left: 14.5,
-{'cocola', 'marobo', 'Items:'}
-{'20', '15.5', 'Amount paid:'}

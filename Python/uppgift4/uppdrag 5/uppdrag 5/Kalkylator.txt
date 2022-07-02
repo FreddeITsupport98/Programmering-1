@@ -1,3 +1,0 @@
-Items: d,d,d,d,d,
-Rekommended kcal intake: 1500,
-Your total kcal intake: 55

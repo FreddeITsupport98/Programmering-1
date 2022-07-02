@@ -8,3 +8,13 @@ Name and surname: fredrik Bäckström
 Service: Good service
 Comment: Good personel
 **************
+*
+*
+**************
+Rate in stars:*****
+Name and surname: Fredrik Bäckström
+Service: Your service is good
+Comment: Like this place!
+**************
+*
+*
