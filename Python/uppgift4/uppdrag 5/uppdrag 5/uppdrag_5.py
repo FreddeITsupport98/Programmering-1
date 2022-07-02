@@ -612,7 +612,7 @@ def kalkylator():
 
         menu = int(input('How many do you want to buy (Rekomended use vending search mode) ?: 1,2,3,4,5, 6: exit program: '))
         if menu == 1:
-            print('test1')
+            print('Single mode')
             item1 = input('Enter a item name: ')
             kcal1 = int(input('Enter mount of kcal: '))
             kcal1_rec = 250
@@ -632,7 +632,7 @@ def kalkylator():
                 print('file written...')
             
         elif menu == 2:
-            print('test2')
+            print('Dual mode')
             item2 = input('Enter item name 1: ')
             item3 = input('Enter item name 2: ')
             kcal2 = int(input('Enter item 1 kcal amount: '))
@@ -657,7 +657,7 @@ def kalkylator():
                 print('file written...')
 
         elif menu == 3:
-            print('test3')
+            print('Quadro mode')
             item4 = input('Enter item name 1: ')
             item5 = input('Enter item name 2: ')
             item6 = input('Enter item name 3: ')
@@ -685,7 +685,7 @@ def kalkylator():
                 file.close()
                 print('file written...')
         elif menu == 4:
-            print('test4')
+            print('Octa mode')
             item7 = input('Enter item name 1: ')
             item8 = input('Enter item name 2: ')
             item9 = input('Enter item name 3: ')
@@ -717,7 +717,7 @@ def kalkylator():
                 file.close()
                 print('file written...')
         elif menu == 5:
-            print('test5')
+            print('Mode 5')
             item11 = input('Enter item name 1: ')
             item12 = input('Enter item name 2: ')
             item13 = input('Enter item name 3: ')
@@ -774,10 +774,30 @@ def rate():
             name = input('Name and surname :')
             service = input('Rate our service: ')
             comment = input('Comments: ')
+            file.write('*' + '\n')
+            file.write('*' + '\n')
             file.write('**************' + '\n')
             file.write('Rate in stars:' + rate + '\n' + 'Name and surname: ' + name + '\n' + 'Service: ' + service + '\n' + 'Comment: ' + comment + '\n' )
             file.write('**************' + '\n')
+            file.write('*' + '\n')
+            file.write('*' + '\n')
             file.close()
+        elif menu == 'exit':
+            break
+
+def kvitto():
+     name = input('Your name: ')
+     while True:
+        print('Hello' + name)
+        menu = input('load previus kvitto?: load or exit \n input: ')
+        if menu == 'load':
+            try: 
+                file = open('kvitto.txt', 'r+')
+                print(file.read())
+                file.close()
+            except:
+                (FileNotFoundError)
+                print('File not found')
         elif menu == 'exit':
             break
 
@@ -793,22 +813,84 @@ while True:
     print(' *      FIVE STAR RATING         *')
     print('*********************************')
     print(' \n')
-    menu = input('Buy at vending machine: \n 1 Single mode,\n 2 batch mode, \n search mode 3, \n 4 rate us, \n 5 exit, \n Input: ')
+    menu = input('Buy at vending machine: \n 1 Single mode,\n 2 batch mode, \n 3 search mode, \n 4 rate us, \n 5 exit, \n Input: ')
     if menu == '1':
-        print('')
+        print('Welcome to vending signle mode...')
+        buy = input(' I want to use kalkylator: 1 \n I want make purchase: 2 \n 3 check kvitto \n \input: ')
+        if buy == '1':
+            print('Starting kalkylator... \n')
+            kalkylator()
+        elif buy == '2':
+            print('Start vending machine in single mode...\n')
+            vending()
+            print('Please rate us\n')
+        elif buy == '3':
+            print('Please rate us!\n')
+            print('Loading kvitto... \n')
+            kvitto()
     elif menu == '2':
-        print('')
+        print('Welcome to vending machine batch mode...\n it is rekommended user kalkylator to se how much kcal you buy')
+        buy2 = input(' I want to use kalkylator: 1 \n I want make purchase: 2 \n 3 check kvitto \n \input: ')
+        if buy2 == '1':
+            print('Starting kalkylator... \n')
+            kalkylator()
+        elif buy2 == '2':
+            print('Start vending machine in single mode...\n')
+            vending_batch()
+            print('Please rate us\n')
+        elif buy2 == '3':
+            print('Please rate us!\n')
+            print('Loading kvitto... \n')
+            kvitto()
     elif menu == '3':
-        print('')
+        print('Welcome to search mode with our new kalkylator!')
+        b = input('Do you want to use search mode? yes or no: ')
+        if b == 'yes':
+            print('Before we use search let us check your kvitto')
+            c = input('Understood: Yes for check kvitto, no for use search mode or kalkylator  \n Input: ')
+            if c == 'yes':
+                print('Starting kvitto...')
+                kvitto()
+                d = input('Did you find items?: \n yes or no: ')
+                if d == 'yes':
+                    f = input(' Still want use search mode? yes or no i want to use kalkylator \n input:')
+                    if f == 'yes':
+                        print('Entering search mode')
+                        vending_search()
+                    elif f == 'no':
+                        print('Enter kalkylator...\n')
+                        kalkylator()
+                elif d == 'no':
+                    print('Please purchase by using single mode or batch mode vending machine')
+            elif c == 'no':
+                i = input('Use search mode or kalkylator: Yes for search mode or No for kalkylator \n Input: ')
+                if i == 'yes':
+                    print('Entering search mode...\n')
+                    vending_search()
+                elif i == 'no':
+                    print('Starting kalkylator...\n')
+                    kalkylator()
+        elif b == 'no':
+            g = input('Do you want use our new kalkylator?')
+            if g == 'yes':
+                print('Entering kalkylator mode...\n')
+                kalkylator()
+            elif g == 'no':
+                print('Bye')
     elif menu == '4':
         print('What do you want to rate our service?')
-        a = input('Are you satified') 
+        a = input('Are you satified: yes or no') 
         if a == 'yes':
             print('please rate us')
             rate()
         elif a == 'no':
             print('Please put your thoughts to rate us!')
-            rate()
+            h = input('Yes i do it or No i dont want to do it. \n Input: ')
+            if h == 'yes':
+                rate()
+            elif h == 'no':
+                print('Okey welcome back!')
+            
     elif menu == '5':
         print('Exiting vending valley.. thank you and come back for some more!')
         break

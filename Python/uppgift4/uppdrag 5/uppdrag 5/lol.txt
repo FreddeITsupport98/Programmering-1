@@ -1,0 +1,6 @@
+Kvitto 2
+rate 2
+kalkylator 3
+vending_search 2 
+vending_batch 1
+vending 1
