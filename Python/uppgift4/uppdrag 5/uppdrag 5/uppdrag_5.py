@@ -1,20 +1,37 @@
-def vending():
+def vending(): #defined use single mode vending buy one att time!
     print('vending machine buy mode "one at time"...')
-
-    while True:
+    # This limit user to insert money maximum 100 kr
+    while True: # while is true
         money = int(input('Input machine amount money: '))
-        if money > 100:
-            print('This machine only accept 100 kr as maximum input')
-        elif money <= 100:
-            print('Machine accepts money...\n')
+        if money > 100: # if money more 100 kr
+            print('This machine only accept 100 kr as maximum input') # print statment
+        elif money <= 100: #if money bigger and equal to 100 kr money accepts
+            print('Machine accepts money...\n') # print statment
             break
-
+    '''
+    
+    Use your imaganation as list display avaible items
+    
+    '''
     slot1 = ['marobo', 'cocola', 'nudlar']
     slot2 = ['kinderkex', 'cocola-light', 'loka']
     slot3 = ['grill-chips', 'viniger-chips', 'cocola-chips']
     slot4 = ['Rizz', 'fonzies', 'nutella-cokies']
     slot5 = ['twix', 'water','snacks']
+    '''
     
+    Use your imaganation as list display avaible items
+    print(slot1) prints whole list of slot 1
+    print('statment')
+
+    output:
+    slot 1 = marabo, cocola, nudlar
+    print(    'item',  'item', 'item', )
+
+    This is purpes to emulate graphical display on real vending machine as for it is importent not taking it serously!
+    with spaces to format list to ouput optimal resulation.
+    
+    '''
     print(slot1)
     print(' E1 15.5 kr,   E2 20 kr, E3 30 kr')
     print(slot2)
@@ -26,106 +43,115 @@ def vending():
     print(slot5)
     print(' E13 17 kr, E14 10 kr, E15 14 kr')
     
-    select = input('\n E1, E2, E3,\n E4, E5, E6\n E7, E8, E9 \n E10, E11 E12 \n E13, E14, E15 \n Input machine: ')
-    if select == 'E1' and money > 15.5:
-        print('It cost you 15 kr')
-        money -= 15.5
-        print(slot1[0])
-        slot1.remove('marobo')
-        for x in slot1, slot2 ,slot3 ,slot4 , slot5:
-            print(x)
-    elif select == 'E2' and money > 20:
+    '''
+    select has number to emulate buttons on vending machine
+    output:
+    E1, E2, E3 and so on...
+    '''
+
+    select = input('\n E1, E2, E3,\n E4, E5, E6\n E7, E8, E9 \n E10, E11 E12 \n E13, E14, E15 \n Input machine: ') # users input with no while loop
+    if select == 'E1' and money > 15.5: # if E1 and money are less 15.5 it check amount money given draw 15.5 kr
+        print('It cost you 15 kr') # notify user with print statment
+        money -= 15.5 # money increments -15.5 ot total money varibel wich user input may reach 100 maximum allownce
+        print(slot1[0]) #print slot1[index 0]
+        slot1.remove('marobo') # remove slot1: marabo
+        for x in slot1, slot2 ,slot3 ,slot4 , slot5: #for each loop to dislay avaible items after  slot1.remove
+            print(x) # prints x varibel in list of slot1,slot2,slot3,slot4,slot5
+            '''
+            Rest of funktions form E1->E15 are same with repeated values in diffrent form and shape!
+            '''
+    elif select == 'E2' and money > 20: # same statement!
         print('It cost you 20 kr')
         money -= 20
         print(slot1[1])
         slot1.remove('cocola')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E3' and money > 30:
+    elif select == 'E3' and money > 30: # same statement!
         print('It cost you 30 kr')
         money -= 30
         print(slot1[2])
         slot1.remove('nudlar')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E4' and money > 12.12:
+    elif select == 'E4' and money > 12.12: # same statement!
         print('It cost you 12.12 kr')
         money -= 12.12
         print(slot2[0])
         slot2.remove('kinderkex')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E5' and money > 15:
+    elif select == 'E5' and money > 15: # same statement!
         print('It cost you 15 kr')
         money -= 15
         print(slot2[1])
         slot2.remove('cocola-light')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E6' and money > 25:
+    elif select == 'E6' and money > 25: # same statement!
         print('It cost you 25 kr')
         money -= 25
         print(slot2[2])
         slot2.remove('loka')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E7' and money > 14:
+    elif select == 'E7' and money > 14: # same statement!
         print('It cost you 14 kr')
         money -= 14
         print(slot3[0])
         slot3.remove('grill-chips')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E8' and money > 25:
+    elif select == 'E8' and money > 25: # same statement!
         print('It cost you 25 kr')
         money -= 25
         print(slot3[1])
         slot3.remove('viniger-chips')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E9' and money > 15:
+    elif select == 'E9' and money > 15: # same statement!
         print('It cost you 15 kr')
         money -= 15
         print(slot3[2])
         slot3.remove('cocola-chips')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E10' and money > 10:
+    elif select == 'E10' and money > 10: # same statement!
         print('It cost you 10 kr')
         money -= 10
         print(slot4[0])
         slot4.remove('Rizz')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E11' and money > 12:
+    elif select == 'E11' and money > 12: # same statement!
         print('It cost you 12 kr')
         money -= 12
         print(slot4[1])
         slot4.remove('fonzies')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E12' and money > 45:
+    elif select == 'E12' and money > 45: # same statement!
         print('It cost you 45 kr')
         money -= 45
         print(slot4[2])
         slot4.remove('nutella-cokies')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E13' and money > 10:
+    elif select == 'E13' and money > 10: # same statement!
         print('It cost you 10 kr')
         money -= 10
         print(slot5[0])
         slot5.remove('twix')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E14' and money > 17:
+    elif select == 'E14' and money > 17: # same statement!
         print('It cost you 17 kr')
         money -= 17
         print(slot5[1])
         slot5.remove('water')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
-    elif select == 'E15' and money > 14:
+    elif select == 'E15' and money > 14: # same statement!
         print('It cost you 14 kr')
         money -= 14
         print(slot5[3])
@@ -133,42 +159,44 @@ def vending():
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
     else:
-        print('Not enough founds or program not accept input')
+        print('Not enough founds or program not accept input') #This else principel is reached when money is not meet requiments of if or elif-sets. It ouput print statement
 
-    
+    '''
+    This section is soposed to emulate tickets after purchase is made
+    '''
      
-    while True:
-        menu = input('load file: Load, append, exit: ')
+    while True: # while loop
+        menu = input('load file: Load, append, exit: ') # load or oppend file
         if menu == 'load':
-            try: 
-                file = open('kvitto1.txt', 'r+')
-                print(file.read())
-                file.close()
-            except:
-                (FileNotFoundError)
+            try: # try to open file if it fails
+                file = open('kvitto1.txt', 'r+') #open file
+                print(file.read()) # print content of file
+                file.close() # closes file
+            except: # it excepts a FileNotFoundError
+                (FileNotFoundError) 
                 print('File not found')
-        elif menu == 'append':
-            file = open('kvitto1.txt', 'a')
-            purchase = input('What did you buy?: ')
-            cost = input('How much did it cost?: ')
-            file.write( 'Money left: ' + str(money) + ',' + 'kr:' + cost + ',' + purchase + '\n')
-            while True:
+        elif menu == 'append': #Append to file
+            file = open('kvitto1.txt', 'a') #oppen file as appending
+            purchase = input('What did you buy?: ') # input user what did they bay
+            cost = input('How much did it cost?: ') # cost input
+            file.write( 'Money left: ' + str(money) + ',' + 'kr:' + cost + ',' + purchase + '\n') #Write file with varibel that must be in string format
+            while True: # emulate cash back from machine
                 if money < 100:
                     print('Here is rest of your money')
                     money -= money
                     print(money)
-                    break
+                    break # break loop
                 elif money >= 100:
                     print('Money still there want get it back? yes:')
                     input('Input: ')
                     if menu == 'yes':
                         money -= money
-                        break
-            file.close()
+                        break # break loop
+            file.close() # file closes
         elif menu == 'exit':
             break
    
-def vending_batch():
+def vending_batch(): #This vending machine may be used purchase multiple times
     print('Vending machine buy mode "batch mode"')
 
     while True:
@@ -179,6 +207,11 @@ def vending_batch():
             print('Machine accepts money...\n')
             break
 
+    '''
+    
+    Use your imaganation as list display avaible items
+    
+    '''
     slot1 = ['marobo', 'cocola', 'nudlar', '', '']
     slot2 = ['kinderkex', 'cocola-light', 'loka', '', '']
     slot3 = ['grill-chips', 'viniger-chips', 'cocola-chips', '', '']
@@ -187,7 +220,20 @@ def vending_batch():
     slot6 = {':Items:'}
     slot7 = {':Amount paid:'}
     slot8 = {':Kcal:'}
+    '''
     
+    Use your imaganation as list display avaible items
+    print(slot1) prints whole list of slot 1
+    print('statment')
+
+    output:
+    slot 1 = marabo, cocola, nudlar
+    print(    'item',  'item', 'item', )
+
+    This is purpes to emulate graphical display on real vending machine as for it is importent not taking it serously!
+    with spaces to format list to ouput optimal resulation.
+    
+    '''
     print(slot1)
     print(' E1 15.5 kr,   E2 20 kr, E3 30 kr')
     print(slot2)
@@ -198,27 +244,34 @@ def vending_batch():
     print(' E10 10 kr, E11 12 kr,  E12 45 kr')
     print(slot5)
     print(' E13 17 kr, E14 10 kr, E15 14 kr')
-    
-    while True:
+    '''
+    select has number to emulate buttons on vending machine
+    output:
+    E1, E2, E3 and so on...
+
+    Diffrence with vending machine and batch vending that has big loop
+
+    '''
+    while True: # added while loop to enable batch purchases
         select = input('\n E1, E2, E3,\n E4, E5, E6\n E7, E8, E9 \n E10, E11 E12 \n E13, E14, E15 \n, exit \n Input machine: ')
-        if select == 'E1' and money > 15.5:
-            print('It cost you 15.5 kr')
-            money -= 15.5
-            print(money)
-            print(slot1[0])
-            try:
+        if select == 'E1' and money > 15.5: # if statement wih and money are less 15.5
+            print('It cost you 15.5 kr')# print satetenebt
+            money -= 15.5 # increments money from user input - 15.5
+            print(money) #print user money
+            print(slot1[0]) # print slot index: 0
+            try:# this will try to remove marabo from slot 1
                 slot1.remove('marobo')
-            except: 
-                print('You already have it"')
-            try:
-                slot6.add('marobo')
-                slot7.add('15.5')
-                slot8.add(500)
-            except: 
-                print('It did not succed to add to list"')
-            for x in slot1, slot2 ,slot3 ,slot4 , slot5:
-                print(x)
-        elif select == 'E2' and money > 20:
+            except: # progran will throw error if user tries enter same button so program will not crash
+                print('You already have it"') # print statment!
+            try: #try to add to list
+                slot6.add('marobo') #add marabo to shopping list
+                slot7.add('15.5') # add 15.5kr to slot 7
+                slot8.add(500) # add 500 kcal to slot 8
+            except: #if not succeded 
+                print('It did not succed to add to list"') # print statment
+            for x in slot1, slot2 ,slot3 ,slot4 , slot5: # for each loop
+                print(x) # print context of x wich i slot1,slot2,slot3,slor4,slot5
+        elif select == 'E2' and money > 20: #Same statment!
             print('It cost you 20 kr')
             money -= 20
             print(money)
@@ -235,8 +288,8 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E3' and money > 30:
-            print('It cost you 30 kr')
+        elif select == 'E3' and money > 30: #Same statment!
+            print('It cost you 30 kr') 
             money -= 30
             print(money)
             print(slot1[2])
@@ -252,7 +305,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E4' and money > 12.12:
+        elif select == 'E4' and money > 12.12:#Same statment!
             print('It cost you 12.12 kr')
             money -= 12.12
             print(money)
@@ -269,7 +322,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E5' and money > 15:
+        elif select == 'E5' and money > 15:#Same statment!
             print('It cost you 15 kr')
             money -= 15
             print(money)
@@ -286,7 +339,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E6' and money > 25:
+        elif select == 'E6' and money > 25:#Same statment!
             print('It cost you 25 kr')
             money -= 25
             print(money)
@@ -303,7 +356,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E7' and money > 14:
+        elif select == 'E7' and money > 14:#Same statment!
             print('It cost you 14 kr')
             money -= 14
             print(money)
@@ -320,7 +373,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E8' and money > 25:
+        elif select == 'E8' and money > 25:#Same statment!
             print('It cost you 25 kr')
             money -= 25
             print(money)
@@ -337,7 +390,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E9' and money > 15:
+        elif select == 'E9' and money > 15:#Same statment!
             print('It cost you 15 kr')
             money -= 15
             print(money)
@@ -354,7 +407,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E10' and money > 10:
+        elif select == 'E10' and money > 10:#Same statment!
             print('It cost you 10 kr')
             money -= 10
             print(money)
@@ -371,7 +424,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E11' and money > 12:
+        elif select == 'E11' and money > 12:#Same statment!
             print('It cost you 12 kr')
             money -= 12
             print(money)
@@ -388,7 +441,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E12' and money > 45:
+        elif select == 'E12' and money > 45:#Same statment!
             print('It cost you 45 kr')
             money -= 45
             print(money)
@@ -405,7 +458,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E13' and money > 10:
+        elif select == 'E13' and money > 10:#Same statment!
             print('It cost you 10 kr')
             money -= 10
             print(money)
@@ -422,7 +475,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E14' and money > 17:
+        elif select == 'E14' and money > 17:#Same statment!
             print('It cost you 17 kr')
             money -= 17
             print(money)
@@ -439,7 +492,7 @@ def vending_batch():
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
-        elif select == 'E15' and money > 14:
+        elif select == 'E15' and money > 14:#Same statment!
             print('It cost you 14 kr')
             money -= 14
             print(money)
@@ -464,11 +517,11 @@ def vending_batch():
             break
 
      
-    while True:
+    while True:#Same statment as at "def vending"!
         menu = input('load file: Load, append, exit: ')
         if menu == 'load':
             try: 
-                file = open('kvitto2.txt', 'r+')
+                file = open('kvitto2.txt', 'r+') # open diffrent file as kvitto2
                 print(file.read())
                 file.close()
             except:
@@ -476,7 +529,7 @@ def vending_batch():
                 print('File not found')
         elif menu == 'append':
 
-            file = open('kvitto2.txt', 'a')
+            file = open('kvitto2.txt', 'a') #open kvitto2 as appending
             file.write('*' + '\n')
             file.write('**********' + '\n')
             file.write( 'Money left: ' + str(money) + ',' + '\n')
@@ -496,9 +549,9 @@ def vending_batch():
                         break
             file.write('*' + '\n')
             file.write('**********' + '\n')
-            file.write(str(slot6) + '\n')
-            file.write(str(slot7) + '\n')
-            file.write(str(slot8) + '\n')
+            file.write(str(slot6) + '\n') # amount paid
+            file.write(str(slot7) + '\n') # items
+            file.write(str(slot8) + '\n') # kcal
             file.write('**********' + '\n')
             file.write('*' + '\n')
             print('File written!')
@@ -510,11 +563,32 @@ def vending_batch():
 def vending_search():
     print('Wending search mode')
     print('!Enter a number. Program wont accept other input!')
+    '''
+    
+    Use your imaganation as list display avaible items
+    print(slot1) prints whole list of slot 1
+    print('statment')
+
+    output:
+    slot 1 = marabo, cocola, nudlar
+    print(    'item',  'item', 'item', )
+
+    This is purpes to emulate graphical display on real vending machine as for it is importent not taking it serously!
+    with spaces to format list to ouput optimal resulation.
+    
+    '''
     slot1 = ['marobo', 'cocola', 'nudlar', '', '']
     slot2 = ['kinderkex', 'cocola-light', 'loka', '', '']
     slot3 = ['grill-chips', 'viniger-chips', 'cocola-chips', '', '']
     slot4 = ['Rizz', 'fonzies', 'nutella-cokies', '']
     slot5 = ['twix', 'water','snacks', '', '']
+    '''
+    select has number to emulate buttons on vending machine
+    output:
+    E1, E2, E3 and so on...
+
+    Diffrence with vending machine and batch vending that has big loop
+    '''
     print('\n')
     print(slot1)
     print(' E1 15.5 kr,   E2 20 kr, E3 30 kr')
