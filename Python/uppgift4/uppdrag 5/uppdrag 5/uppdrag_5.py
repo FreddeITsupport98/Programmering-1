@@ -10,7 +10,8 @@ def vending(): #defined use single mode vending buy one att time!
             break
     '''
     
-    Use your imaganation as list display avaible items
+    Use your imaganation as list display avaible items 
+    This machine does not need error handling beacuse user only promted once!
     
     '''
     slot1 = ['marobo', 'cocola', 'nudlar']
@@ -29,7 +30,7 @@ def vending(): #defined use single mode vending buy one att time!
     print(    'item',  'item', 'item', )
 
     This is purpes to emulate graphical display on real vending machine as for it is importent not taking it serously!
-    with spaces to format list to ouput optimal resulation.
+    *with spaces to format list to ouput optimal resulation.
     
     '''
     print(slot1)
@@ -210,6 +211,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
     '''
     
     Use your imaganation as list display avaible items
+    *This machine needed error handling beacuse user only promted many times!
     
     '''
     slot1 = ['marobo', 'cocola', 'nudlar', '', '']
@@ -563,6 +565,25 @@ def vending_batch(): #This vending machine may be used purchase multiple times
 def vending_search():
     print('Wending search mode')
     print('!Enter a number. Program wont accept other input!')
+
+    '''
+        This is dictonary work as switch case!
+
+        varibel = integer(input())
+
+        defined varibel_name()
+                print-statment('Something')
+        dictonary = {1: varibel_name}
+        dictonary.get(varibel) ()
+        -------------------------------------
+        in retrospectrum
+        x = int(input())
+        def a()
+            print('Something')
+        dict = {1: a}
+        dict.get(x) ()
+    '''
+
     '''
     
     Use your imaganation as list display avaible items
@@ -586,8 +607,6 @@ def vending_search():
     select has number to emulate buttons on vending machine
     output:
     E1, E2, E3 and so on...
-
-    Diffrence with vending machine and batch vending that has big loop
     '''
     print('\n')
     print(slot1)
@@ -602,110 +621,110 @@ def vending_search():
     print(' E13 17 kr, E14 10 kr, E15 14 kr')
     print('\n')
     print('\n E1, E2, E3,\n E4, E5, E6\n E7, E8, E9 \n E10, E11 E12 \n E13, E14, E15 \n')
-    while True:
-        try:
+    while True: # While loop
+        try: # Try to get x input in int
             x = int(input('Enter Number: '))
-        except:
+        except: # if user enter other value not are int-range it trhow value error 
             (ValueError)
-            print('Error invalid input!')
+            print('Error invalid input!') # print statment!
 
-        def first():
+        def first(): # print statment!
             print('E1')
             print('Marabo')
             print('15.5 kr')
             print('500 kcal')
             print('200 g')
             print('laktose')
-        def second():
+        def second(): # print statment!
             print('E2')
             print('cocola')
             print('20 kr')
             print('1000 kcal')
             print('450 g')
             print('sugar and chemicals')
-        def third():
+        def third(): # print statment!
             print('E3')
             print('Nudlar')
             print('30 kr')
             print('800 kcal')
             print('200 g')
             print('sugar and salt')
-        def fourth():
+        def fourth(): # print statment!
             print('E4')
             print('Kinderkex')
             print('12.12 kr')
             print('650 kcal')
             print('50 g')
             print('sugar and chemicals and lactose')
-        def fith():
+        def fith(): # print statment!
             print('E5')
             print('cocola-light')
             print('15 kr')
             print('1 kcal')
             print('450 g')
             print('sugar and chemicals')
-        def six():
+        def six(): # print statment!
             print('E6')
             print('Loka')
             print('25 kr')
             print('1 kcal')
             print('450 g')
             print('carbonise water')
-        def seven():
+        def seven(): # print statment!
             print('E7')
             print('Grill-chips')
             print('17 kr')
             print('560 kcal')
             print('400 g')
             print('high fatt and salt')
-        def eight():
+        def eight(): # print statment!
             print('E8')
             print('viniger-chips')
             print('25 kr')
             print('600 kcal')
             print('350 g')
             print('high fatt and salt')
-        def nine():
+        def nine():# print statment!
             print('E9')
             print('Cocola-chips')
             print('800 kcal')
             print('200 g')
             print('high fatt and salt')
-        def ten():
+        def ten(): # print statment!
             print('E10')
             print('Rizz')
             print('10 kr')
             print('200 kcal')
             print('50 g')
             print('Sugar and lactose')
-        def eleven():
+        def eleven(): # print statment!
             print('E11')
             print('fronzies')
             print('12 kr')
             print('400 kcal')
             print('50 g')
             print('Sugar and lactose')
-        def tvelve():
+        def tvelve(): # print statment!
             print('E12')
             print('Nutella-cokies')
             print('45 kr')
             print('600 kcal')
             print('150 g')
             print('Sugar and lactose')
-        def thirteen():
+        def thirteen(): # print statment!
             print('E13')
             print('twix')
             print('17 kr')
             print('200 kcal')
             print('100 g')
             print('Sugar and lactose')
-        def forteen():
+        def forteen(): # print statment!
             print('E14')
             print('water')
             print('10 kr')
             print('0 kcal')
             print('450 g')
-        def fifteen():
+        def fifteen(): # print statment!
             print('E15')
             print('snacks')
             print('14 kr')
@@ -729,45 +748,51 @@ def vending_search():
             14:forteen,
             15:fifteen,
             }
-        try: 
+        try: # try get dict by value x
             dict.get(x) () # this closing braket is needed
-        except:
-            print('An error happened, meaby invalid number...')
-        menu = input('Write "exit" to exit vending machine search mode or press enter to continue.')
-        if menu == 'exit':
+        except: # except if number are exceed more 15 concatenating number
+            print('An error happened, meaby invalid number...') # print statment!
+        menu = input('Write "exit" to exit vending machine search mode or press enter to continue.') # it appears after every input to exit program!
+        if menu == 'exit': # exit if-statment!
             break
+        
 
 def kalkylator():
 
-    while True:
-        enter = input('Want use wending search mode?: yes or no: ')
-        if enter == 'yes':
-            vending_search()
+    while True: # while loop
+        enter = input('Want use wending search mode?: yes or no: ') # user input
+        if enter == 'yes': # yes
+            vending_search() # start vending_search
         elif enter == 'no':
             print('Good luck')
 
-        menu = int(input('How many do you want to buy (Rekomended use vending search mode) ?: 1,2,3,4,5, 6: exit program: '))
+            '''
+            Here is to measure amount kcal and i setup kcal rekommended and it writes out to file
+            it is important to use vending search to get data amount kcal you get from those item to kalkulate amount
+            it is a fun little program.
+            '''
+        menu = int(input('How many do you want to buy (Rekomended use vending search mode) ?: 1,2,3,4,5, 6: exit program: ')) #menu
         if menu == 1:
-            print('Single mode')
+            print('Single mode') #single mode
             item1 = input('Enter a item name: ')
             kcal1 = int(input('Enter mount of kcal: '))
-            kcal1_rec = 250
+            kcal1_rec = 250 # rekommended kcal set
             if kcal1 > kcal1_rec:
-                print(item1)
-                print('Recomended intake', kcal1_rec,'kcal', 'yours is: ', kcal1, '\n')
-                file = open('Kalkylator.txt', 'a')
-                file.write('items:' + item1 +','+ '\n' + 'Rekommended kcal intake: '  + str(kcal1_rec) + ','  + '\n'+ 'Your kcal intake: '+ str(kcal1))
-                file.close()
-                print('file written...')
-            elif kcal1 < kcal1_rec:
-                print(item1)
-                print('You are in rekomended intake', kcal1_rec,'kcal','yours is:', kcal1, '\n')
-                file = open('Kalkylator.txt', 'a')
-                file.write( 'items:' + item1 +',' + '\n' + 'Rekommended kcal intake: ' + str(kcal1_rec) +','  + '\n' + 'Your kcal intake: ' + str(kcal1))
-                file.close()
-                print('file written...')
+                print(item1) # print item
+                print('Recomended intake', kcal1_rec,'kcal', 'yours is: ', kcal1, '\n') # print statmend
+                file = open('Kalkylator.txt', 'a') # open file
+                file.write('items:' + item1 +','+ '\n' + 'Rekommended kcal intake: '  + str(kcal1_rec) + ','  + '\n'+ 'Your kcal intake: '+ str(kcal1)) # write file
+                file.close() # close file
+                print('file written...') # notify user
+            elif kcal1 < kcal1_rec: # if in rekommended kcal intake
+                print(item1)# same statment!
+                print('You are in rekomended intake', kcal1_rec,'kcal','yours is:', kcal1, '\n') # same statment!
+                file = open('Kalkylator.txt', 'a') # same statment!
+                file.write( 'items:' + item1 +',' + '\n' + 'Rekommended kcal intake: ' + str(kcal1_rec) +','  + '\n' + 'Your kcal intake: ' + str(kcal1)) # same statment!
+                file.close() # same statment!
+                print('file written...') # same statment!
             
-        elif menu == 2:
+        elif menu == 2: # same statment but with more values and higher rekmmended intake!
             print('Dual mode')
             item2 = input('Enter item name 1: ')
             item3 = input('Enter item name 2: ')
@@ -792,7 +817,7 @@ def kalkylator():
                 file.close()
                 print('file written...')
 
-        elif menu == 3:
+        elif menu == 3: # same statment but with more values and higher rekmmended intake!
             print('Quadro mode')
             item4 = input('Enter item name 1: ')
             item5 = input('Enter item name 2: ')
@@ -820,7 +845,7 @@ def kalkylator():
                 file.write( 'Items: ' + item4 + ',' + item5 +',' + item6 + ',' + '\n'+ 'Rekommended kcal intake: ' + str(kcal1_rec3) + ','+ '\n' + 'Your total kcal intake: ' + str(totalkcal2) + '\n')
                 file.close()
                 print('file written...')
-        elif menu == 4:
+        elif menu == 4: # same statment but with more values and higher rekmmended intake!
             print('Octa mode')
             item7 = input('Enter item name 1: ')
             item8 = input('Enter item name 2: ')
@@ -852,7 +877,7 @@ def kalkylator():
                 file.write( 'Items:' + item7 + ',' + item8 +',' + item9 + ',' + item10 + ',' + '\n'+ 'Rekommended kcal intake: ' + str(kcal1_rec4) +',' + '\n'+ 'Your total kcal intake: ' + str(totalkcal3) + '\n')
                 file.close()
                 print('file written...')
-        elif menu == 5:
+        elif menu == 5: # same statment but with more values and higher rekmmended intake!
             print('Mode 5')
             item11 = input('Enter item name 1: ')
             item12 = input('Enter item name 2: ')
@@ -892,12 +917,12 @@ def kalkylator():
             print('Exiting kalkylator...')
             break
 
-def rate():
+def rate(): # this is to rate services 
     print(' Welcome to rate us our service')
-    while True:
-        menu = input('load file: Load previus rate, append rating, exit: ')
+    while True: # while loop
+        menu = input('load file: Load previus rate, append: rating, exit: ') # menu
         if menu == 'load':
-            try: 
+            try: #error handling
                 file = open('rate.txt', 'r+')
                 print(file.read())
                 file.close()
@@ -905,54 +930,57 @@ def rate():
                 (FileNotFoundError)
                 print('File not found')
         elif menu == 'append':
-            file = open('rate.txt', 'a')
-            rate = input('How manu stars do you want rate us *-> ***** as maximum stars you can give us. \n Rate: ')
-            name = input('Name and surname :')
-            service = input('Rate our service: ')
-            comment = input('Comments: ')
+            file = open('rate.txt', 'a') #open file
+            rate = input('How manu stars do you want rate us *-> ***** as maximum stars you can give us. \n Rate: ') # user input
+            name = input('Name and surname :')# user input
+            service = input('Rate our service: ')# user input
+            comment = input('Comments: ')# user input
+            file.write('*' + '\n')# file write
             file.write('*' + '\n')
-            file.write('*' + '\n')
-            file.write('**************' + '\n')
-            file.write('Rate in stars:' + rate + '\n' + 'Name and surname: ' + name + '\n' + 'Service: ' + service + '\n' + 'Comment: ' + comment + '\n' )
-            file.write('**************' + '\n')
-            file.write('*' + '\n')
-            file.write('*' + '\n')
+            file.write('**************' + '\n')# file write
+            file.write('Rate in stars:' + rate + '\n' + 'Name and surname: ' + name + '\n' + 'Service: ' + service + '\n' + 'Comment: ' + comment + '\n' )# file write
+            file.write('**************' + '\n')# file write
+            file.write('*' + '\n')# file write
+            file.write('*' + '\n')# file write
             file.close()
         elif menu == 'exit':
             break
 
 
 def kalkylator_file():
-     name = input('Your name: ')
-     while True:
+     name = input('Your name: ') #user input
+     while True: # loop
         print('Hello' + ': ' + name)
         menu = input('load previus kalkylator file?: load or exit \n input: ')
         if menu == 'load':
-            try: 
-                file = open('Kalkylator.txt', 'r+')
-                print(file.read())
+            try:  # file not found error
+                file = open('Kalkylator.txt', 'r+') # file open
+                print(file.read()) # print content
                 file.close()
             except:
                 (FileNotFoundError)
                 print('File not found')
-        elif menu == 'exit':
+        elif menu == 'exit': #exit
             break
 
 def kvitto():
-     name = input('Your name: ')
-     while True:
-        print('Hello' + ': ' + name)
-        menu = input('load previus kvitto?: load or exit \n input: ')
+     '''
+     This is to get kvitto make sure to buy something otherwise it will error out
+     '''
+     name = input('Your name: ') #user input
+     while True: # loop
+        print('Hello' + ': ' + name) #user input
+        menu = input('load previus kvitto?: load or exit \n input: ') # menu
         if menu == 'load':
-            try: 
-                file = open('kvitto1.txt', 'r+')
+            try: #file not found error
+                file = open('kvitto1.txt', 'r+') # vvending machine 1 kvitto1
                 print(file.read())
                 file.close()
             except:
                 (FileNotFoundError)
                 print('File not found')
-            try: 
-                file = open('kvitto2.txt', 'r+')
+            try: #file not found error
+                file = open('kvitto2.txt', 'r+') #vending machine bach kvitto 2
                 print(file.read())
                 file.close()
             except:
@@ -963,6 +991,10 @@ def kvitto():
 
 
 while True:
+    '''
+    This senction is self-explanatory it does not need comment to explain but here in big menu tree and is...
+    funktion to appear when selection is made. that binds whole code as one. Please use it in causon 
+    '''
     print(' Welcome to vending alley there you can buy at vending machine for diffrent prices.')
     print(' Here can you test out our kalkylator to measure the intake of kcal \n program is built to guide users whieght loss \n ')
     print('*********************************')
@@ -985,13 +1017,13 @@ while True:
             print('\n')
             print('Starting kalkylator... \n')
             print('\n')
-            kalkylator()
+            kalkylator() #funktion
             print('\n')
         elif buy == '2':
             print('\n')
             print('Start vending machine in single mode...\n')
             print('\n')
-            vending()
+            vending() #funktion
             print('\n')
             print('Please rate us\n')
             print('\n')
@@ -1001,7 +1033,7 @@ while True:
             print('\n')
             print('Loading kvitto... \n')
             print('\n')
-            kvitto()
+            kvitto() #funktion
             print('\n')
         elif buy == '4':
             print('\n')
@@ -1009,7 +1041,7 @@ while True:
             print('\n')
             print('Loading kalkylator file... \n')
             print('\n')
-            kalkylator_file()
+            kalkylator_file() #funktion
             print('\n')
     elif menu == '2':
         print('\n')
@@ -1021,13 +1053,13 @@ while True:
             print('\n')
             print('Starting kalkylator... \n')
             print('\n')
-            kalkylator()
+            kalkylator() #funktion
             print('\n')
         elif buy2 == '2':
             print('\n')
             print('Start vending machine in single mode...\n')
             print('\n')
-            vending_batch()
+            vending_batch() #funktion
             print('\n')
             print('Please rate us\n')
             print('\n')
@@ -1036,7 +1068,7 @@ while True:
             print('\n')
             print('Loading kvitto... \n')
             print('\n')
-            kvitto()
+            kvitto() #funktion
             print('\n')
         elif buy2 == '4':
             print('\n')
@@ -1044,7 +1076,7 @@ while True:
             print('\n')
             print('Loading kalkylator file... \n')
             print('\n')
-            kalkylator_file()
+            kalkylator_file() #funktion
             print('\n')
     elif menu == '3':
         print('Welcome to search mode with our new kalkylator! \n')
@@ -1058,7 +1090,7 @@ while True:
             if c == 'yes':
                 print('Starting kvitto...\n')
                 print('\n')
-                kvitto()
+                kvitto() #funktion
                 d = input('Did you find items\n * It is recommended to use our new tool to measure kcal in kalkylator with your purchase? : \n yes or no: ')
                 print('\n')
                 if d == 'yes':
@@ -1069,12 +1101,12 @@ while True:
                         print('\n')
                         print('Entering search mode \n')
                         print('\n')
-                        vending_search()
+                        vending_search() #funktion
                     elif f == 'no':
                         print('\n')
                         print('Enter kalkylator...\n')
                         print('\n')
-                        kalkylator()
+                        kalkylator() #funktion
                 elif d == 'no':
                     print('\n')
                     print('Please purchase by using single mode or batch mode vending machine')
@@ -1087,13 +1119,13 @@ while True:
                     print('\n')
                     print('Entering search mode...\n')
                     print('\n')
-                    vending_search()
+                    vending_search() #funktion
                     print('\n')
                 elif i == 'no':
                     print('\n')
                     print('Starting kalkylator...\n')
                     print('\n')
-                    kalkylator()
+                    kalkylator() #funktion
                     print('\n')
         elif b == 'no':
             print('\n')
@@ -1104,7 +1136,7 @@ while True:
                 print('Entering kalkylator mode...\n')
                 print('\n')
                 print('\n')
-                kalkylator()
+                kalkylator() #funktion
             elif g == 'no':
                 print('\n')
                 print('Bye')
@@ -1119,7 +1151,7 @@ while True:
             print('\n')
             print('please rate us')
             print('\n')
-            rate()
+            rate() #funktion
             print('\n')
         elif a == 'no':
             print('\n')
@@ -1129,7 +1161,7 @@ while True:
             print('\n')
             if h == 'yes':
                 print('\n')
-                rate()
+                rate() #funktion
                 print('\n')
             elif h == 'no':
                 print('\n')
