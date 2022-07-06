@@ -155,7 +155,7 @@ def vending(): #defined use single mode vending buy one att time!
     elif select == 'E15' and money > 14: # same statement!
         print('It cost you 14 kr')
         money -= 14
-        print(slot5[3])
+        print(slot5[2])
         slot5.remove('snacks')
         for x in slot1, slot2 ,slot3 ,slot4 , slot5:
             print(x)
@@ -180,7 +180,19 @@ def vending(): #defined use single mode vending buy one att time!
             file = open('kvitto1.txt', 'a') #oppen file as appending
             purchase = input('What did you buy?: ') # input user what did they bay
             cost = input('How much did it cost?: ') # cost input
+            name = input('Your name: ') 
+            file.write('**********' + '\n')
+            file.write('Vending machine: signle mode, kvitto1' + '\n')
+            file.write('**********' + '\n')
+            file.write('*' + '\n')
+            file.write('**********' + '\n')
+            file.write('Your name:' + name + '\n')
+            file.write('**********' + '\n')
+            file.write('*' + '\n')
+            file.write('**********' + '\n')
             file.write( 'Money left: ' + str(money) + ',' + 'kr:' + cost + ',' + purchase + '\n') #Write file with varibel that must be in string format
+            file.write('**********' + '\n')
+            file.write('*' + '\n')
             while True: # emulate cash back from machine
                 if money < 100:
                     print('Here is rest of your money')
@@ -194,6 +206,7 @@ def vending(): #defined use single mode vending buy one att time!
                         money -= money
                         break # break loop
             file.close() # file closes
+            print('File written!')
         elif menu == 'exit':
             break
    
@@ -203,7 +216,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
     while True:
         money = int(input('Input machine amount money: '))
         if money > 100:
-            print('This machine only accept 100 kr as maximum input')
+           print('This machine only accept 100 kr as maximum input')
         elif money <= 100:
             print('Machine accepts money...\n')
             break
@@ -214,11 +227,11 @@ def vending_batch(): #This vending machine may be used purchase multiple times
     *This machine needed error handling beacuse user only promted many times!
     
     '''
-    slot1 = ['marobo', 'cocola', 'nudlar', '', '']
+    slot1 = ['marobo', 'cocola', 'nudlar', '', ''] # get list of range error thats why i add more indexes
     slot2 = ['kinderkex', 'cocola-light', 'loka', '', '']
-    slot3 = ['grill-chips', 'viniger-chips', 'cocola-chips', '', '']
-    slot4 = ['Rizz', 'fonzies', 'nutella-cokies', '']
-    slot5 = ['twix', 'water','snacks', '', '']
+    slot3 = ['grill-chips', 'viniger-chips', 'cocola-chips','' ,'']
+    slot4 = ['Rizz', 'fonzies', 'nutella-cokies', '', '']
+    slot5 = ['twix', 'water','snacks','', '']
     slot6 = {':Items:'}
     slot7 = {':Amount paid:'}
     slot8 = {':Kcal:'}
@@ -498,7 +511,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print('It cost you 14 kr')
             money -= 14
             print(money)
-            print(slot5[3])
+            print(slot5[2])
             try:
                 slot5.remove('snacks')
             except: 
@@ -530,8 +543,15 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 (FileNotFoundError)
                 print('File not found')
         elif menu == 'append':
-
+            name = input('Your name: ')
             file = open('kvitto2.txt', 'a') #open kvitto2 as appending
+            file.write('**********' + '\n')
+            file.write('Vending machine: Batch, kvitto2' + '\n')
+            file.write('**********' + '\n')
+            file.write('*' + '\n')
+            file.write('**********' + '\n')
+            file.write('Your name:' + name + '\n')
+            file.write('**********' + '\n')
             file.write('*' + '\n')
             file.write('**********' + '\n')
             file.write( 'Money left: ' + str(money) + ',' + '\n')
@@ -543,7 +563,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                     money -= money
                     print(money)
                     break
-                elif money >= 100:
+                elif money > 100:
                     print('Money still there want get it back? yes:')
                     input('Input: ')
                     if menu == 'yes':

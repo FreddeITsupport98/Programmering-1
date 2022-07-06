@@ -1,12 +1,19 @@
+**********
+Vending machine: Batch, kvitto2
+**********
 *
 **********
-Money left: 30,
+Your name:Fredrik Bäckström
+**********
+*
+**********
+Money left: 70,
 **********
 *
 *
 **********
-{'nudlar', 'cocola-chips', 'loka', ':Items:'}
-{'15', '25', ':Amount paid:', '30'}
-{800, 1, ':Kcal:'}
+{':Items:', 'nudlar'}
+{':Amount paid:', '30'}
+{800, ':Kcal:'}
 **********
 *
