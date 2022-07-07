@@ -271,8 +271,10 @@ def vending_batch(): #This vending machine may be used purchase multiple times
         select = input('\n E1, E2, E3,\n E4, E5, E6\n E7, E8, E9 \n E10, E11 E12 \n E13, E14, E15 \n, exit \n Input machine: ')
         print('\n')
         if select == 'E1' and money > 15.5: # if statement wih and money are less 15.5
-            print('It cost you 15.5 kr')# print satetenebt
-            money -= 15.5 # increments money from user input - 15.5
+            print('It cost you 15.5 kr')# print statement
+            money -= 15.5 # increments money from user input - 15.5 still increment when user presses same button
+            print(sale)
+            sale += 1
             print(money) #print user money
             print(slot1[0]) # print slot index: 0
             try:# this will try to remove marabo from slot 1
@@ -288,6 +290,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print('It did not succed to add to list"') # print statment
             for x in slot1, slot2 ,slot3 ,slot4 , slot5: # for each loop
                 print(x) # print context of x wich i slot1,slot2,slot3,slor4,slot5
+
         elif select == 'E2' and money > 20: #Same statment!
             print('It cost you 20 kr')
             money -= 20
@@ -306,6 +309,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print('It did not succed to add to list!')
             for x in slot1, slot2 ,slot3 ,slot4 , slot5:
                 print(x)
+
         elif select == 'E3' and money > 30: #Same statment!
             print('It cost you 30 kr') 
             money -= 30

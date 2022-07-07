@@ -17,3 +17,22 @@ Money left: 70,
 {800, ':Kcal:'}
 **********
 *
+**********
+Vending machine: Batch, kvitto2
+**********
+*
+**********
+Your name:fredrik  Bäckström
+**********
+*
+**********
+Money left: 64.5,
+**********
+*
+*
+**********
+{':Items:', 'cocola', 'marobo'}
+{'20', '15.5', ':Amount paid:'}
+{1000, ':Kcal:', 500}
+**********
+*
