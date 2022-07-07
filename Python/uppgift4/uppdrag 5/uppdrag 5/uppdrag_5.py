@@ -273,8 +273,6 @@ def vending_batch(): #This vending machine may be used purchase multiple times
         if select == 'E1' and money > 15.5: # if statement wih and money are less 15.5
             print('It cost you 15.5 kr')# print statement
             money -= 15.5 # increments money from user input - 15.5 still increment when user presses same button
-            print(sale)
-            sale += 1
             print(money) #print user money
             print(slot1[0]) # print slot index: 0
             try:# this will try to remove marabo from slot 1
@@ -549,7 +547,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             break
         else:
             print('Not enough founds or program not accept input')
-            break
+            
 
      
     while True:#Same statment as at "def vending"!
