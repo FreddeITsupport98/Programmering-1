@@ -269,6 +269,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
     '''
     while True: # added while loop to enable batch purchases
         select = input('\n E1, E2, E3,\n E4, E5, E6\n E7, E8, E9 \n E10, E11 E12 \n E13, E14, E15 \n, exit \n Input machine: ')
+        print('\n')
         if select == 'E1' and money > 15.5: # if statement wih and money are less 15.5
             print('It cost you 15.5 kr')# print satetenebt
             money -= 15.5 # increments money from user input - 15.5
@@ -276,6 +277,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot1[0]) # print slot index: 0
             try:# this will try to remove marabo from slot 1
                 slot1.remove('marobo')
+                print('\n')
             except: # progran will throw error if user tries enter same button so program will not crash
                 print('You already have it"') # print statment!
             try: #try to add to list
@@ -293,6 +295,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot1[1])
             try: 
                 slot1.remove('cocola')
+                print('\n')
             except: 
                 print('You already have it!')
             try: 
@@ -310,6 +313,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot1[2])
             try:
                 slot1.remove('nudlar')
+                print('\n')
             except: 
                 print('You already have it!')
             try:
@@ -327,6 +331,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot2[0])
             try:
                 slot2.remove('kinderkex')
+                print('\n')
             except:
                 print('You already have it!')
             try:
@@ -344,6 +349,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot2[1])
             try:
                 slot2.remove('cocola-light')
+                print('\n')
             except: 
                 print('You already have it!')
             try:
@@ -361,6 +367,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot2[2])
             try:
                 slot2.remove('loka')
+                print('\n')
             except: 
                 print('You already have it!')
             try:
@@ -378,6 +385,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot3[0])
             try:
                 slot3.remove('grill-chips')
+                print('\n')
             except: 
                 print('You already have it')
             try:
@@ -395,6 +403,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot3[1])
             try:
                 slot3.remove('viniger-chips')
+                print('\n')
             except: 
                 print('You already have it!')
             try:
@@ -412,6 +421,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot3[2])
             try:
                 slot3.remove('cocola-chips')
+                print('\n')
             except: 
                 print('You already have it!')
             try:
@@ -429,6 +439,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot4[0])
             try:
                 slot4.remove('Rizz')
+                print('\n')
             except: 
                 print('You already have it!')
             try:
@@ -446,6 +457,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot4[1])
             try:
                 slot4.remove('fonzies')
+                print('\n')
             except: 
                 print('You already have it!')
             try:
@@ -463,6 +475,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot4[2])
             try:
                 slot4.remove('nutella-cokies')
+                print('\n')
             except: 
                 print('You already have it!')
             try:
@@ -480,6 +493,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot5[0])
             try:
                 slot5.remove('twix')
+                print('\n')
             except: 
                 print('You already have it!')
             try:
@@ -497,6 +511,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot5[1])
             try:
                 slot5.remove('water')
+                print('\n')
             except: 
                 print('You already have it!')
             try:
@@ -514,6 +529,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             print(slot5[2])
             try:
                 slot5.remove('snacks')
+                print('\n')
             except: 
                 print('You already have it!')
             try:
