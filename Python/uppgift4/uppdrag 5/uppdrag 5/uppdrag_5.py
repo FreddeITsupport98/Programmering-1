@@ -227,11 +227,11 @@ def vending_batch(): #This vending machine may be used purchase multiple times
     *This machine needed error handling beacuse user only promted many times!
     
     '''
-    slot1 = ['marobo', 'cocola', 'nudlar', '', ''] # get list of range error thats why i add more indexes
-    slot2 = ['kinderkex', 'cocola-light', 'loka', '', '']
-    slot3 = ['grill-chips', 'viniger-chips', 'cocola-chips','' ,'']
-    slot4 = ['Rizz', 'fonzies', 'nutella-cokies', '', '']
-    slot5 = ['twix', 'water','snacks','', '']
+    slot1 = ['marobo', 'cocola', 'nudlar','',''] # get list of range error thats why i add more indexes
+    slot2 = ['kinderkex', 'cocola-light', 'loka','']
+    slot3 = ['grill-chips', 'viniger-chips', 'cocola-chips','','']
+    slot4 = ['Rizz', 'fonzies', 'nutella-cokies','','']
+    slot5 = ['twix', 'water','snacks', '','']
     slot6 = {':Items:'}
     slot7 = {':Amount paid:'}
     slot8 = {':Kcal:'}
@@ -267,14 +267,78 @@ def vending_batch(): #This vending machine may be used purchase multiple times
     Diffrence with vending machine and batch vending that has big loop
 
     '''
+
+    '''
+    Sale is purpess to hinder user by purchase same and lose money over purchase item, no vending machine does that 
+    it only promt user to select button once not twice. sale are set to value of zero and value increments to add one more 
+    value to if statment
+
+    sale = 0
+
+while True:
+    a = input('a eller b: ')
+    if a == 'a': loops till user choose to break
+        if sale < 1:
+            sale += 1
+            print(sale)
+            money -= 15.5 
+            print(money)
+        elif sale <= 2:
+            print('Did not draw')
+    elif a == 'b':
+        break
+    '''
+    sale1 = 0
+    sale2 = 0
+    sale3 = 0
+    sale4 = 0
+    sale5 = 0
+    sale6 = 0
+    sale7 = 0
+    sale8 = 0
+    sale9 = 0
+    sale10 = 0
+    sale11 = 0
+    sale12 = 0
+    sale13 = 0
+    sale14 = 0
+    sale15 = 0
+    saleb1 = 0
+    saleb2 = 0
+    saleb3 = 0
+    saleb4 = 0
+    saleb5 = 0
+    saleb6 = 0
+    saleb7 = 0
+    saleb8 = 0
+    saleb9 = 0
+    saleb10 = 0
+    saleb11 = 0
+    saleb12 = 0
+    saleb13 = 0
+    saleb14 = 0
+    saleb15 = 0
     while True: # added while loop to enable batch purchases
         select = input('\n E1, E2, E3,\n E4, E5, E6\n E7, E8, E9 \n E10, E11 E12 \n E13, E14, E15 \n, exit \n Input machine: ')
         print('\n')
         if select == 'E1' and money > 15.5: # if statement wih and money are less 15.5
             print('It cost you 15.5 kr')# print statement
-            money -= 15.5 # increments money from user input - 15.5 still increment when user presses same button
+            if sale1 < 1:
+                sale1 += 1
+                money -= 15.5 # increments money from user input - 15.5 only once if sale value rised obove 1
+            elif sale1 <= 2:
+                print('You already purchase item!')
             print(money) #print user money
-            print(slot1[0]) # print slot index: 0
+            '''
+            try to limit slot printing otherwise it takes slot index from as if item isnt there. it is a bug fixeable.
+            by limit its run time once and second it prints
+            '''
+            if saleb1 < 1:
+                saleb1 += 1
+                print(slot1[0]) # print slot index: 0
+            elif saleb1 <= 2:
+                print('marabo')
+            print('\n')
             try:# this will try to remove marabo from slot 1
                 slot1.remove('marobo')
                 print('\n')
@@ -290,10 +354,20 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x) # print context of x wich i slot1,slot2,slot3,slor4,slot5
 
         elif select == 'E2' and money > 20: #Same statment!
+            
             print('It cost you 20 kr')
-            money -= 20
+            if sale2 < 1:
+                sale2 += 1
+                money -= 20
+            elif sale2 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot1[1])
+            if saleb2 < 1:
+                print(slot1[1])
+                saleb2 += 1
+            elif saleb2 <= 2:
+                print('cocola')
+            print('\n')
             try: 
                 slot1.remove('cocola')
                 print('\n')
@@ -310,9 +384,19 @@ def vending_batch(): #This vending machine may be used purchase multiple times
 
         elif select == 'E3' and money > 30: #Same statment!
             print('It cost you 30 kr') 
-            money -= 30
+            if sale3 < 1:
+                sale3 += 1
+                money -= 30
+            elif sale3 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot1[2])
+            if saleb3 < 1:
+                saleb3 += 1
+                print(slot1[2])
+            elif saleb3 <= 2:
+                print('nudlar')
+                  
+            print('\n')
             try:
                 slot1.remove('nudlar')
                 print('\n')
@@ -328,9 +412,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E4' and money > 12.12:#Same statment!
             print('It cost you 12.12 kr')
-            money -= 12.12
+            if sale4 < 1:
+                sale4 += 1
+                money -= 12.12
+            elif sale4 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot2[0])
+            if saleb4 < 1:
+                saleb4 += 1
+                print(slot2[0])
+            elif saleb4 <= 2:
+                print('kinderkex')
+            print('\n')
             try:
                 slot2.remove('kinderkex')
                 print('\n')
@@ -346,9 +439,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E5' and money > 15:#Same statment!
             print('It cost you 15 kr')
-            money -= 15
+            if sale5 < 1:
+                sale5 += 1
+                money -= 15
+            elif sale5 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot2[1])
+            if saleb5 < 1:
+                saleb5 += 1
+                print(slot2[1])
+            elif saleb5 <= 2:
+                print('cocola-light')
+            print('\n')
             try:
                 slot2.remove('cocola-light')
                 print('\n')
@@ -364,9 +466,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E6' and money > 25:#Same statment!
             print('It cost you 25 kr')
-            money -= 25
+            if sale6 < 1:
+                sale6 += 1
+                money -= 25
+            elif sale6 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot2[2])
+            if saleb6 < 1:
+                saleb6 += 1
+                print(slot2[2])
+            elif saleb6 <= 2:
+                print('loka')
+            print('\n')
             try:
                 slot2.remove('loka')
                 print('\n')
@@ -382,9 +493,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E7' and money > 14:#Same statment!
             print('It cost you 14 kr')
-            money -= 14
+            if sale7 < 1:
+                sale7 += 1
+                money -= 14
+            elif sale7 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot3[0])
+            if saleb7 < 1:
+                saleb7 += 1
+                print(slot3[0])
+            elif saleb7 <= 2:
+                print('grill-chips')
+            print('\n')
             try:
                 slot3.remove('grill-chips')
                 print('\n')
@@ -400,9 +520,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E8' and money > 25:#Same statment!
             print('It cost you 25 kr')
-            money -= 25
+            if sale8 < 1:
+                sale8 += 1
+                money -= 25
+            elif sale8 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot3[1])
+            if saleb8 < 1:
+                saleb8 += 1
+                print(slot3[1])
+            elif saleb8 <= 2:
+                print('viniger-chips')
+            print('\n')
             try:
                 slot3.remove('viniger-chips')
                 print('\n')
@@ -418,9 +547,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E9' and money > 15:#Same statment!
             print('It cost you 15 kr')
-            money -= 15
+            if sale9 < 1:
+                sale9 += 1
+                money -= 15
+            elif sale9 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot3[2])
+            if saleb9 < 1:
+                saleb9 += 1
+                print(slot3[2])
+            elif saleb9 <= 2:
+                print('cocola-chips')
+            print('\n')
             try:
                 slot3.remove('cocola-chips')
                 print('\n')
@@ -436,9 +574,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E10' and money > 10:#Same statment!
             print('It cost you 10 kr')
-            money -= 10
+            if sale10 < 1:
+                sale10 += 1
+                money -= 10
+            elif sale10 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot4[0])
+            if saleb10 < 1:
+                saleb10 += 1
+                print(slot4[0])
+            elif saleb10 <= 2:
+                print('Rizz')
+            print('\n')
             try:
                 slot4.remove('Rizz')
                 print('\n')
@@ -454,9 +601,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E11' and money > 12:#Same statment!
             print('It cost you 12 kr')
-            money -= 12
+            if sale11 < 1:
+                sale11 += 1
+                money -= 11
+            elif sale11 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot4[1])
+            if saleb11 < 1:
+                saleb11 += 1
+                print(slot4[1])
+            elif saleb11 <= 2:
+                print('fronzies')
+            print('\n')
             try:
                 slot4.remove('fonzies')
                 print('\n')
@@ -472,9 +628,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E12' and money > 45:#Same statment!
             print('It cost you 45 kr')
-            money -= 45
+            if sale12 < 1:
+                sale12 += 1
+                money -= 45
+            elif sale12 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot4[2])
+            if saleb12 < 1:
+                saleb12 += 1
+                print(slot4[2])
+            elif saleb12 <= 2:
+                print('Nutella-cokies')
+            print('\n')
             try:
                 slot4.remove('nutella-cokies')
                 print('\n')
@@ -490,9 +655,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E13' and money > 10:#Same statment!
             print('It cost you 10 kr')
-            money -= 10
+            if sale13 < 1:
+                sale13 += 1
+                money -= 10
+            elif sale13 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot5[0])
+            if saleb13 < 1:
+                saleb13 += 1
+                print(slot5[0])
+            elif saleb13 <= 2:
+                print('twix')
+            print('\n')
             try:
                 slot5.remove('twix')
                 print('\n')
@@ -508,9 +682,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E14' and money > 17:#Same statment!
             print('It cost you 17 kr')
-            money -= 17
+            if sale14 < 1:
+                sale14 += 1
+                money -= 17
+            elif sale14 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot5[1])
+            if saleb14 < 1:
+                saleb14 += 1
+                print(slot5[1])
+            elif saleb14 <= 2:
+                print('Water')
+            print('\n')
             try:
                 slot5.remove('water')
                 print('\n')
@@ -526,9 +709,18 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                 print(x)
         elif select == 'E15' and money > 14:#Same statment!
             print('It cost you 14 kr')
-            money -= 14
+            if sale15 < 1:
+                sale15 += 1
+                money -= 14
+            elif sale15 <= 2:
+                print('You already purchase item!')
             print(money)
-            print(slot5[2])
+            if saleb15 < 1:
+                saleb15 += 1
+                print(slot5[2])
+            elif saleb15 <= 2:
+                print('Snacks')
+            print('\n')
             try:
                 slot5.remove('snacks')
                 print('\n')
@@ -547,6 +739,7 @@ def vending_batch(): #This vending machine may be used purchase multiple times
             break
         else:
             print('Not enough founds or program not accept input')
+            print( 'Your money: ', money)
             
 
      
@@ -581,9 +774,8 @@ def vending_batch(): #This vending machine may be used purchase multiple times
                     money -= money
                     print(money)
                     break
-                elif money > 100:
-                    print('Money still there want get it back? yes:')
-                    input('Input: ')
+                elif money <= 100:
+                    menu = input('Money still there want get it back? yes: ')
                     if menu == 'yes':
                         money -= money
                         break

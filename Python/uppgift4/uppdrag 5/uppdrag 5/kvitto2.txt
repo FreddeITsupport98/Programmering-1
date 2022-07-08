@@ -36,3 +36,41 @@ Money left: 64.5,
 {1000, ':Kcal:', 500}
 **********
 *
+**********
+Vending machine: Batch, kvitto2
+**********
+*
+**********
+Your name:fredrik Bäckström
+**********
+*
+**********
+Money left: 3,
+**********
+*
+*
+**********
+{'nutella-cokies', 'fonzies', 'twix', 'snacks', 'water', ':Items:'}
+{'12', ':Amount paid:', '14', '10', '17', '45'}
+{0, 450, ':Kcal:', 200, 400, 600}
+**********
+*
+**********
+Vending machine: Batch, kvitto2
+**********
+*
+**********
+Your name:fb
+**********
+*
+**********
+Money left: 100,
+**********
+*
+*
+**********
+{':Items:'}
+{':Amount paid:'}
+{':Kcal:'}
+**********
+*
