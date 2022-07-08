@@ -197,7 +197,7 @@ def vending(): #defined use single mode vending buy one att time!
                 if money < 100:
                     print('Here is rest of your money')
                     money -= money
-                    print(money)
+                    print( 'inserted money: ',money)
                     break # break loop
                 elif money >= 100:
                     print('Money still there want get it back? yes:')
@@ -282,7 +282,7 @@ while True:
             sale += 1
             print(sale)
             money -= 15.5 
-            print(money)
+            print( 'inserted money: ',money)
         elif sale <= 2:
             print('Did not draw')
     elif a == 'b':
@@ -328,7 +328,7 @@ while True:
                 money -= 15.5 # increments money from user input - 15.5 only once if sale value rised obove 1
             elif sale1 <= 2:
                 print('You already purchase item!')
-            print(money) #print user money
+            print( 'inserted money: ',money) #print user money
             '''
             try to limit slot printing otherwise it takes slot index from as if item isnt there. it is a bug fixeable.
             by limit its run time once and second it prints
@@ -336,6 +336,10 @@ while True:
             if saleb1 < 1:
                 saleb1 += 1
                 print(slot1[0]) # print slot index: 0
+                print('Selected item: Marabo') #if index printing outside of index such indexes har empty value. It prints out empty string if index higher then 2
+                print('500 kcal')
+                print('laktose')
+                print('200 g')
             elif saleb1 <= 2:
                 print('marabo')
             print('\n')
@@ -361,10 +365,14 @@ while True:
                 money -= 20
             elif sale2 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb2 < 1:
                 print(slot1[1])
+                print('Selected item: cocola')
                 saleb2 += 1
+                print('1000 kcal')
+                print('sugar and chemicals')
+                print('450 g')
             elif saleb2 <= 2:
                 print('cocola')
             print('\n')
@@ -389,10 +397,14 @@ while True:
                 money -= 30
             elif sale3 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb3 < 1:
                 saleb3 += 1
                 print(slot1[2])
+                print('Selected item: nudlar')
+                print('800 kcal')
+                print('Sugar and salt')
+                print('50 g')
             elif saleb3 <= 2:
                 print('nudlar')
                   
@@ -417,10 +429,14 @@ while True:
                 money -= 12.12
             elif sale4 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb4 < 1:
                 saleb4 += 1
                 print(slot2[0])
+                print('Selected item: Kinderkex')
+                print('650 kcal')
+                print('Sugar and chemicals and lactose')
+                print('50 g')
             elif saleb4 <= 2:
                 print('kinderkex')
             print('\n')
@@ -444,10 +460,14 @@ while True:
                 money -= 15
             elif sale5 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb5 < 1:
                 saleb5 += 1
                 print(slot2[1])
+                print('Selected item: Cocola-light')
+                print('1 kcal')
+                print('Sugar and chemicals')
+                print('450 g')
             elif saleb5 <= 2:
                 print('cocola-light')
             print('\n')
@@ -471,10 +491,14 @@ while True:
                 money -= 25
             elif sale6 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb6 < 1:
                 saleb6 += 1
                 print(slot2[2])
+                print('Selected item: Loka')
+                print('1 kcal')
+                print('carbonised water')
+                print('450 g')
             elif saleb6 <= 2:
                 print('loka')
             print('\n')
@@ -498,10 +522,14 @@ while True:
                 money -= 14
             elif sale7 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb7 < 1:
                 saleb7 += 1
                 print(slot3[0])
+                print('Selected item: Grill-chips')
+                print('560 kcal')
+                print('High fatt and salt')
+                print('400 g')
             elif saleb7 <= 2:
                 print('grill-chips')
             print('\n')
@@ -525,10 +553,14 @@ while True:
                 money -= 25
             elif sale8 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb8 < 1:
                 saleb8 += 1
                 print(slot3[1])
+                print('Selected item: Viniger-chips')
+                print('600 kcal')
+                print('High fatt and sallt')
+                print('350 g')
             elif saleb8 <= 2:
                 print('viniger-chips')
             print('\n')
@@ -552,10 +584,14 @@ while True:
                 money -= 15
             elif sale9 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb9 < 1:
                 saleb9 += 1
                 print(slot3[2])
+                print('Selected item: Cocola-chips')
+                print('800 kcal')
+                print('High fatt and salt')
+                print('200 g')
             elif saleb9 <= 2:
                 print('cocola-chips')
             print('\n')
@@ -579,10 +615,14 @@ while True:
                 money -= 10
             elif sale10 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb10 < 1:
                 saleb10 += 1
                 print(slot4[0])
+                print('Selected item: Rizz')
+                print('200 kcal')
+                print('Sugar and lactose')
+                print('50 g')
             elif saleb10 <= 2:
                 print('Rizz')
             print('\n')
@@ -606,10 +646,14 @@ while True:
                 money -= 11
             elif sale11 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb11 < 1:
                 saleb11 += 1
                 print(slot4[1])
+                print('Selected item: Fronzies')
+                print('400 kcal')
+                print('Sugar and lactose')
+                print('50 g')
             elif saleb11 <= 2:
                 print('fronzies')
             print('\n')
@@ -633,10 +677,14 @@ while True:
                 money -= 45
             elif sale12 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb12 < 1:
                 saleb12 += 1
                 print(slot4[2])
+                print('Selected item: Nutella-cokies')
+                print('600 kcal')
+                print('Sugar and lactose')
+                print('150 g')
             elif saleb12 <= 2:
                 print('Nutella-cokies')
             print('\n')
@@ -660,10 +708,14 @@ while True:
                 money -= 10
             elif sale13 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb13 < 1:
                 saleb13 += 1
                 print(slot5[0])
+                print('Selected item: Twix')
+                print('200 kcal')
+                print('Sugar and lactose')
+                print('100 g')
             elif saleb13 <= 2:
                 print('twix')
             print('\n')
@@ -687,10 +739,13 @@ while True:
                 money -= 17
             elif sale14 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb14 < 1:
                 saleb14 += 1
                 print(slot5[1])
+                print('Selected item: Water')
+                print('0 kcal')
+                print('450 g')
             elif saleb14 <= 2:
                 print('Water')
             print('\n')
@@ -714,10 +769,14 @@ while True:
                 money -= 14
             elif sale15 <= 2:
                 print('You already purchase item!')
-            print(money)
+            print( 'inserted money: ',money)
             if saleb15 < 1:
                 saleb15 += 1
                 print(slot5[2])
+                print('Selected item: Snacks')
+                print('450 kcal')
+                print('High fatt and salt')
+                print('75 g')
             elif saleb15 <= 2:
                 print('Snacks')
             print('\n')
@@ -772,7 +831,7 @@ while True:
                 if money < 100:
                     print('Here is rest of your money')
                     money -= money
-                    print(money)
+                    print( 'inserted money: ',money)
                     break
                 elif money <= 100:
                     menu = input('Money still there want get it back? yes: ')
@@ -1275,7 +1334,7 @@ while True:
             print('\n')
     elif menu == '2':
         print('\n')
-        print('Welcome to vending machine batch mode...\n it is rekommended user kalkylator to se how much kcal you buy')
+        print('Welcome to vending machine batch mode...\n * it is rekommended user kalkylator to se how much in kcal you buy \n * If not sure what to buy use vending search!')
         print('\n')
         buy2 = input(' I want to use kalkylator: 1 \n I want make purchase: 2 \n check kvitto: 3 \n check kalkylator file: 4 \n \input: ')
         print('\n')
