@@ -918,108 +918,138 @@ def vending_search():
             print('Error invalid input!') # print statment!
 
         def first(): # print statment!
+            print('\n')
             print('E1')
             print('Marabo')
             print('15.5 kr')
             print('500 kcal')
             print('200 g')
             print('laktose')
+            print('\n')
         def second(): # print statment!
+            print('\n')
             print('E2')
             print('cocola')
             print('20 kr')
             print('1000 kcal')
             print('450 g')
             print('sugar and chemicals')
+            print('\n')
         def third(): # print statment!
+            print('\n')
             print('E3')
             print('Nudlar')
             print('30 kr')
             print('800 kcal')
             print('200 g')
             print('sugar and salt')
+            print('\n')
         def fourth(): # print statment!
+            print('\n')
             print('E4')
             print('Kinderkex')
             print('12.12 kr')
             print('650 kcal')
             print('50 g')
             print('sugar and chemicals and lactose')
+            print('\n')
         def fith(): # print statment!
+            print('\n')
             print('E5')
             print('cocola-light')
             print('15 kr')
             print('1 kcal')
             print('450 g')
             print('sugar and chemicals')
+            print('\n')
         def six(): # print statment!
+            print('\n')
             print('E6')
             print('Loka')
             print('25 kr')
             print('1 kcal')
             print('450 g')
             print('carbonise water')
+            print('\n')
         def seven(): # print statment!
+            print('\n')
             print('E7')
             print('Grill-chips')
             print('17 kr')
             print('560 kcal')
             print('400 g')
             print('high fatt and salt')
+            print('\n')
         def eight(): # print statment!
+            print('\n')
             print('E8')
             print('viniger-chips')
             print('25 kr')
             print('600 kcal')
             print('350 g')
             print('high fatt and salt')
+            print('\n')
         def nine():# print statment!
+            print('\n')
             print('E9')
             print('Cocola-chips')
             print('800 kcal')
             print('200 g')
             print('high fatt and salt')
+            print('\n')
         def ten(): # print statment!
+            print('\n')
             print('E10')
             print('Rizz')
             print('10 kr')
             print('200 kcal')
             print('50 g')
             print('Sugar and lactose')
+            print('\n')
         def eleven(): # print statment!
+            print('\n')
             print('E11')
             print('fronzies')
             print('12 kr')
             print('400 kcal')
             print('50 g')
             print('Sugar and lactose')
+            print('\n')
         def tvelve(): # print statment!
+            print('\n')
             print('E12')
             print('Nutella-cokies')
             print('45 kr')
             print('600 kcal')
             print('150 g')
             print('Sugar and lactose')
+            print('\n')
         def thirteen(): # print statment!
+            print('\n')
             print('E13')
             print('twix')
             print('17 kr')
             print('200 kcal')
             print('100 g')
             print('Sugar and lactose')
+            print('\n')
         def forteen(): # print statment!
+            print('\n')
             print('E14')
             print('water')
             print('10 kr')
             print('0 kcal')
             print('450 g')
+            print('\n')
         def fifteen(): # print statment!
+            print('\n')
             print('E15')
             print('snacks')
             print('14 kr')
             print('450 kcal')
             print('75 g')
             print('high fatt and salt')
+            print('\n')
         dict = {
             1:first, 
             2:second,
@@ -1041,7 +1071,7 @@ def vending_search():
             dict.get(x) () # this closing braket is needed
         except: # except if number are exceed more 15 concatenating number
             print('An error happened, meaby invalid number...') # print statment!
-        menu = input('Write "exit" to exit vending machine search mode or press enter to continue.') # it appears after every input to exit program!
+        menu = input('Write "exit" to exit vending machine search mode or press enter to continue \n input: ') # it appears after every input to exit program!
         if menu == 'exit': # exit if-statment!
             break
         
