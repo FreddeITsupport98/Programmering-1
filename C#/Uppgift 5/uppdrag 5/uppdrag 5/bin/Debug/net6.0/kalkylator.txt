@@ -1,0 +1,3 @@
+Items: marabo,
+Rekommended kcal intake: 250,
+Your kcal intake: 100

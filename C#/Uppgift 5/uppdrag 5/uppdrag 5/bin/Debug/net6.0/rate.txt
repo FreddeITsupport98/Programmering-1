@@ -1,0 +1,10 @@
+Fredrik
+*
+*
+**************
+Rate in stars: *****
+Name and surname: Fredrik
+good
+comments: good
+
+**************

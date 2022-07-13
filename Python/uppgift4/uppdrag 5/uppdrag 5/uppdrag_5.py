@@ -1079,7 +1079,7 @@ def vending_search():
 def kalkylator():
 
     while True: # while loop
-        enter = input('Want use wending search mode?: yes or no: ') # user input
+        enter = input('Want use vending search mode?: yes or no: ') # user input
         if enter == 'yes': # yes
             vending_search() # start vending_search
         elif enter == 'no':
