@@ -18,7 +18,7 @@ namespace vendingmachine
 
              */
 
-            Console.WriteLine("This is a demo all funktion are limited for demostration of code to teacher judge. \n Please refer fully code in Python!");
+            Console.WriteLine("This is a demo all funktion are limited for demostration of code to teacher judge. \n Please refer fully code in Python! \n welcome to debugg menu!");
             
             
             while (true)
@@ -341,6 +341,8 @@ namespace vendingmachine
 
             // menu och knappar
             int sale = 0;
+            string[] items = new string[10];
+            items[1] = "";
             while (true)
             {
                 Console.Write("\n E1, E2, E3,\n E4, E5, E6\n E7, E8, E9 \n E10, E11 E12 \n E13, E14, E15 \n Input machine: ");
@@ -362,6 +364,7 @@ namespace vendingmachine
                     string item1 = "Marabo";
                     Console.WriteLine(money);
                     Console.WriteLine(slot1[0]);
+                    items.Append(items[1] = "Marabo");
                     Console.WriteLine("Selected item: Marabo");
                     Console.WriteLine("500 kcal");
                     Console.WriteLine("laktose");
